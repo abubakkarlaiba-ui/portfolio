@@ -603,6 +603,12 @@ section {
   flex-shrink: 0;
 }
 
+.contact-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 .contact-item a {
   color: #94A3B8;
   text-decoration: none;
@@ -668,9 +674,22 @@ footer {
   transition: color 0.3s, transform 0.3s;
 }
 
+.social-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
 .social-links a:hover {
   color: #F59E0B;
   transform: translateY(-3px);
+}
+
+.social-links a:hover .social-img {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* Reveal animations */
