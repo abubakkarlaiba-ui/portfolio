@@ -410,6 +410,20 @@ section {
 }
 
 .skill-icon { font-size: 2rem; margin-bottom: 0.4rem; }
+.skill-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.2));
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.skill-item:hover .skill-img {
+  filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.4));
+  transform: scale(1.1);
+}
+
 .skill-name { font-weight: 600; font-size: 0.85rem; color: #E2E8F0; }
 
 /* Projects */
