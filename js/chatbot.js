@@ -44,19 +44,22 @@ const knowledgeBase = {
   ],
   projects: [
     {
-      name: "NovaPay",
-      description: "A real-time payment dashboard with fraud detection, transaction analytics, and multi-currency support.",
-      tech: ["React", "Node.js", "WebSocket", "Redis"]
+      name: "Black Wolf Media",
+      description: "A full-service video editing and production agency website for Lahore, Pakistan. Features cinematic portfolio showcase, client testimonials, service booking, and AI-powered content solutions.",
+      tech: ["Next.js", "React", "Tailwind", "Web Design"],
+      url: "https://blackwolfmediame.vercel.app"
     },
     {
-      name: "Flux Studio",
-      description: "Collaborative design tool with real-time editing, version history, and AI-powered asset generation.",
-      tech: ["Next.js", "WebRTC", "PostgreSQL", "Tailwind"]
+      name: "Zyro",
+      description: "AI-powered web development platform that lets businesses launch websites in hours. Features conversion architecture, business automation, payment infrastructure, and custom SaaS solutions.",
+      tech: ["Next.js", "TypeScript", "AI", "SaaS"],
+      url: "https://zyro-steel.vercel.app"
     },
     {
-      name: "Orbit CLI",
-      description: "Developer CLI tool for scaffolding microservices, managing deployments, and monitoring infra.",
-      tech: ["TypeScript", "Node.js", "Docker", "Kubernetes"]
+      name: "GrimZone",
+      description: "Pakistan's premier Free Fire tournament platform. Players compete in 1v1 and 2v2 tournaments, earn tokens, and win real prizes with a live world chat feature.",
+      tech: ["Next.js", "React", "Real-time", "Gaming"],
+      url: "https://grimzone.vercel.app"
     }
   ],
   stats: {
