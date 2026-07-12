@@ -410,7 +410,8 @@ section {
 }
 
 .skill-icon { font-size: 2rem; margin-bottom: 0.4rem; }
-.skill-img {
+.skill-img,
+.skill-svg {
   width: 48px;
   height: 48px;
   object-fit: contain;
@@ -419,7 +420,8 @@ section {
   transition: filter 0.3s, transform 0.3s;
 }
 
-.skill-item:hover .skill-img {
+.skill-item:hover .skill-img,
+.skill-item:hover .skill-svg {
   filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.4));
   transform: scale(1.1);
 }
