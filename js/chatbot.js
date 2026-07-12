@@ -1,13 +1,13 @@
 const knowledgeBase = {
-  name: "abubakkar",
-  fullName: "abubakkar",
+  name: "Abubakkar",
+  fullName: "Abubakkar",
   title: "Full-Stack Developer & Creative Problem Solver",
   location: "Remote / Worldwide",
-  email: "hello@abubakkar.dev",
+  email: "hello@Abubakkar.dev",
   socials: {
-    github: "github.com/abubakkar",
-    linkedin: "linkedin.com/in/abubakkar",
-    twitter: "@abubakkar_dev"
+    github: "github.com/Abubakkar",
+    linkedin: "linkedin.com/in/Abubakkar",
+    twitter: "@Abubakkar_dev"
   },
   about: [
     "I'm a full-stack developer with 4+ years of experience building fast, intuitive digital products.",
@@ -75,16 +75,16 @@ function normalize(str) {
 
 function getGreeting() {
   const greetings = [
-    "Hey there! 👋 I'm abubakkar's AI assistant. What would you like to know about him?",
-    "Hi! I can tell you all about abubakkar — his skills, projects, experience, and more. Ask away!",
-    "Hello! I'm here to help you learn about abubakkar. What are you curious about?"
+    "Hey there! 👋 I'm Abubakkar's AI assistant. What would you like to know about him?",
+    "Hi! I can tell you all about Abubakkar — his skills, projects, experience, and more. Ask away!",
+    "Hello! I'm here to help you learn about Abubakkar. What are you curious about?"
   ];
   return greetings[Math.floor(Math.random() * greetings.length)];
 }
 
 function getFallback() {
   const fallbacks = [
-    "I'm not sure I understand. You can ask me about abubakkar's skills, projects, experience, or contact info!",
+    "I'm not sure I understand. You can ask me about Abubakkar's skills, projects, experience, or contact info!",
     "Hmm, I don't have an answer for that. Try asking about his tech stack, work history, or how to get in touch!",
     "I couldn't find that in my knowledge base. Feel free to ask about his skills, projects, experience, or background!"
   ];
@@ -101,12 +101,12 @@ function findAnswer(query) {
 
   // Name
   if (/\b(name|who are you|who is)\b/.test(q) && /(you|this)/.test(q)) {
-    return `I'm an AI assistant here to tell you about <span class="highlight">abubakkar</span> — a full-stack developer and creative problem solver. Ask me anything about him!`;
+    return `I'm an AI assistant here to tell you about <span class="highlight">Abubakkar</span> — a full-stack developer and creative problem solver. Ask me anything about him!`;
   }
 
   // Who is / about
-  if (/\b(who is|tell me about|about)\b/.test(q) && /\b(abubakkar|him|he|his|you)\b/.test(q)) {
-    return `<span class="highlight">abubakkar</span> is a Full-Stack Developer & Creative Problem Solver with 4+ years of experience. He specializes in React, Node.js, and TypeScript. He's delivered 30+ projects for 20+ happy clients. He believes great code is just the beginning — the real magic happens when performance meets purpose.`;
+  if (/\b(who is|tell me about|about)\b/.test(q) && /\b(Abubakkar|him|he|his|you)\b/.test(q)) {
+    return `<span class="highlight">Abubakkar</span> is a Full-Stack Developer & Creative Problem Solver with 4+ years of experience. He specializes in React, Node.js, and TypeScript. He's delivered 30+ projects for 20+ happy clients. He believes great code is just the beginning — the real magic happens when performance meets purpose.`;
   }
 
   // Skills / tech stack
@@ -118,7 +118,7 @@ function findAnswer(query) {
       ...knowledgeBase.skills.mobile,
       ...knowledgeBase.skills.tools
     ];
-    return `<span class="highlight">abubakkar's</span> tech stack includes:\n\n` +
+    return `<span class="highlight">Abubakkar's</span> tech stack includes:\n\n` +
       `🔷 <b>Frontend:</b> ${knowledgeBase.skills.frontend.join(', ')}\n` +
       `🖥️ <b>Backend:</b> ${knowledgeBase.skills.backend.join(', ')}\n` +
       `☁️ <b>DevOps:</b> ${knowledgeBase.skills.devops.join(', ')}\n` +
@@ -128,17 +128,17 @@ function findAnswer(query) {
 
   // Frontend specifically
   if (/\bfrontend\b|\bfront-end\b/.test(q)) {
-    return `<span class="highlight">abubakkar's</span> frontend skills: ${knowledgeBase.skills.frontend.join(', ')}.`;
+    return `<span class="highlight">Abubakkar's</span> frontend skills: ${knowledgeBase.skills.frontend.join(', ')}.`;
   }
 
   // Backend specifically
   if (/\bback\s*end\b|\bbackend\b/.test(q)) {
-    return `<span class="highlight">abubakkar's</span> backend skills: ${knowledgeBase.skills.backend.join(', ')}.`;
+    return `<span class="highlight">Abubakkar's</span> backend skills: ${knowledgeBase.skills.backend.join(', ')}.`;
   }
 
   // Experience / work
   if (/\b(experience|work|job|career|employ|position|role|company)\b/.test(q)) {
-    let exp = `<span class="highlight">abubakkar's</span> work experience:\n\n`;
+    let exp = `<span class="highlight">Abubakkar's</span> work experience:\n\n`;
     knowledgeBase.experience.forEach(e => {
       exp += `<b>${e.role}</b> @ ${e.company} (${e.period})\n${e.description}\n\n`;
     });
@@ -147,7 +147,7 @@ function findAnswer(query) {
 
   // Projects
   if (/\b(project|build|made|create|portfolio|work)\b/.test(q)) {
-    let proj = `<span class="highlight">abubakkar's</span> featured projects:\n\n`;
+    let proj = `<span class="highlight">Abubakkar's</span> featured projects:\n\n`;
     knowledgeBase.projects.forEach(p => {
       proj += `<b>${p.name}</b> — ${p.description}\nTech: ${p.tech.join(', ')}\n\n`;
     });
@@ -170,68 +170,68 @@ function findAnswer(query) {
 
   // Contact / email / reach
   if (/\b(contact|email|reach|message|connect|hire|get in touch)\b/.test(q)) {
-    return `You can reach <span class="highlight">abubakkar</span> at:\n\n📧 <b>Email:</b> hello@abubakkar.dev\n🐦 <b>Twitter:</b> @abubakkar_dev\n🐙 <b>GitHub:</b> github.com/abubakkar\n🔗 <b>LinkedIn:</b> linkedin.com/in/abubakkar\n\nHe's based remotely and open to interesting opportunities worldwide!`;
+    return `You can reach <span class="highlight">Abubakkar</span> at:\n\n📧 <b>Email:</b> hello@Abubakkar.dev\n🐦 <b>Twitter:</b> @Abubakkar_dev\n🐙 <b>GitHub:</b> github.com/Abubakkar\n🔗 <b>LinkedIn:</b> linkedin.com/in/Abubakkar\n\nHe's based remotely and open to interesting opportunities worldwide!`;
   }
 
   // Location
   if (/\b(location|where|based|remote|live|located)\b/.test(q)) {
-    return `<span class="highlight">abubakkar</span> works remotely from anywhere in the world. 🌍`;
+    return `<span class="highlight">Abubakkar</span> works remotely from anywhere in the world. 🌍`;
   }
 
   // Years / experience years
   if (/\b(how long|years|experience)\b/.test(q) && /\b(work|coding|dev|job)\b/.test(q)) {
-    return `<span class="highlight">abubakkar</span> has <b>4+ years</b> of professional development experience.`;
+    return `<span class="highlight">Abubakkar</span> has <b>4+ years</b> of professional development experience.`;
   }
 
   // Stats
   if (/\b(stat|achievement|accomplish|deliver|client|project.*count|how many)\b/.test(q)) {
-    return `<span class="highlight">abubakkar's</span> stats:\n\n📦 <b>${knowledgeBase.stats.projectsDelivered}</b> projects delivered\n😊 <b>${knowledgeBase.stats.happyClients}</b> happy clients\n💼 <b>${knowledgeBase.stats.yearsExperience}</b> years experience`;
+    return `<span class="highlight">Abubakkar's</span> stats:\n\n📦 <b>${knowledgeBase.stats.projectsDelivered}</b> projects delivered\n😊 <b>${knowledgeBase.stats.happyClients}</b> happy clients\n💼 <b>${knowledgeBase.stats.yearsExperience}</b> years experience`;
   }
 
   // React
   if (/\breact\b/.test(q) && /\b(skill|know|use|work|experience)\b/.test(q)) {
-    return `<span class="highlight">abubakkar</span> is highly skilled in React and uses it as his primary frontend framework. He's built complex SPAs, dashboards, and interactive UIs with React, Next.js, and React Native.`;
+    return `<span class="highlight">Abubakkar</span> is highly skilled in React and uses it as his primary frontend framework. He's built complex SPAs, dashboards, and interactive UIs with React, Next.js, and React Native.`;
   }
 
   // Node.js
   if (/\bnode\b/.test(q) && /\b(skill|know|use|work|experience)\b/.test(q)) {
-    return `<span class="highlight">abubakkar</span> uses Node.js extensively for backend development — REST APIs, microservices, real-time applications with WebSockets, and CLI tools.`;
+    return `<span class="highlight">Abubakkar</span> uses Node.js extensively for backend development — REST APIs, microservices, real-time applications with WebSockets, and CLI tools.`;
   }
 
   // TypeScript
   if (/\btypescript\b/.test(q)) {
-    return `<span class="highlight">abubakkar</span> uses TypeScript daily across both frontend and backend for type-safe, maintainable code.`;
+    return `<span class="highlight">Abubakkar</span> uses TypeScript daily across both frontend and backend for type-safe, maintainable code.`;
   }
 
   // Docker
   if (/\bdocker\b/.test(q)) {
-    return `<span class="highlight">abubakkar</span> uses Docker for containerization and development environments. He also works with Kubernetes for orchestration.`;
+    return `<span class="highlight">Abubakkar</span> uses Docker for containerization and development environments. He also works with Kubernetes for orchestration.`;
   }
 
   // AWS / cloud
   if (/\b(aws|cloud|deploy)\b/.test(q)) {
-    return `<span class="highlight">abubakkar</span> has experience with AWS services including EC2, Lambda, S3, and RDS for cloud deployment and infrastructure.`;
+    return `<span class="highlight">Abubakkar</span> has experience with AWS services including EC2, Lambda, S3, and RDS for cloud deployment and infrastructure.`;
   }
 
   // Current / present
   if (/\b(current|now|present|today|working on)\b/.test(q)) {
     const current = knowledgeBase.experience[0];
-    return `Currently, <span class="highlight">abubakkar</span> is working as <b>${current.role}</b> at ${current.company}. ${current.description}`;
+    return `Currently, <span class="highlight">Abubakkar</span> is working as <b>${current.role}</b> at ${current.company}. ${current.description}`;
   }
 
   // Coffee / interests
   if (/\b(coffee|hobby|interest|fun|outside|free time)\b/.test(q)) {
-    return `When he's not coding, <span class="highlight">abubakkar</span> enjoys exploring new frameworks, contributing to open-source projects, and perfecting his pour-over coffee technique! ☕`;
+    return `When he's not coding, <span class="highlight">Abubakkar</span> enjoys exploring new frameworks, contributing to open-source projects, and perfecting his pour-over coffee technique! ☕`;
   }
 
   // Help
   if (/\b(help|what can you|what do you know|capabilities)\b/.test(q)) {
-    return "I can tell you about <span class='highlight'>abubakkar's</span> skills, projects, work experience, contact info, and background. Just ask me anything!";
+    return "I can tell you about <span class='highlight'>Abubakkar's</span> skills, projects, work experience, contact info, and background. Just ask me anything!";
   }
 
   // Goodbye
   if (/\b(bye|goodbye|see you|thanks|thank you)\b/.test(q)) {
-    return "You're welcome! Feel free to ask more about <span class='highlight'>abubakkar</span> anytime. 😊";
+    return "You're welcome! Feel free to ask more about <span class='highlight'>Abubakkar</span> anytime. 😊";
   }
 
   return null;
