@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>abubakkar - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">abubakkar</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="gradient-text">abubakkar</span>
+        </h1>
+        <p class="hero-title">Full-Stack Developer &amp; Creative Problem Solver</p>
+        <p class="hero-desc">
+          I craft scalable, high-performance digital experiences 
+          that merge clean code with bold design. Turning complex 
+          ideas into elegant reality.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+          <button class="btn btn-ghost" id="chatCTA">Ask AI About Me</button>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <div class="avatar-ring">
+          <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=abubakkar&backgroundColor=009CDE&style=circle" alt="abubakkar avatar" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <p class="section-label reveal">About Me</p>
+    <h2 class="section-title reveal">Who <span class="gradient-text">I Am</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal-left">
+        <p>
+          I'm <strong>abubakkar</strong> — a full-stack developer with a passion for 
+          building digital products that are fast, intuitive, and visually striking. 
+          I specialize in React, Node.js, and modern web technologies.
+        </p>
+        <p>
+          When I'm not pushing pixels or debugging at 2 AM, you'll find me 
+          exploring new frameworks, contributing to open-source, or 
+          perfecting my pour-over coffee technique.
+        </p>
+        <p>
+          I believe great code is just the beginning — the real magic happens 
+          when performance meets purpose.
+        </p>
+      </div>
+      <div class="about-stats reveal-right">
+        <div class="stat-card">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Cups of Coffee</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <p class="section-label reveal">My Skills</p>
+    <h2 class="section-title reveal">Tech <span class="gradient-text">Stack</span></h2>
+    <p class="section-sub reveal">
+      Technologies I work with daily to bring ideas to life.
+    </p>
+    <div class="skills-grid">
+      <div class="skill-item reveal"><div class="skill-icon">⚛️</div><div class="skill-name">React</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">🟢</div><div class="skill-name">Node.js</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">🔷</div><div class="skill-name">TypeScript</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">🎨</div><div class="skill-name">CSS/Sass</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">🗄️</div><div class="skill-name">MongoDB</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">⚡</div><div class="skill-name">Next.js</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">🐍</div><div class="skill-name">Python</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">📱</div><div class="skill-name">React Native</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">☁️</div><div class="skill-name">AWS</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">🗃️</div><div class="skill-name">PostgreSQL</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">🔄</div><div class="skill-name">Git</div></div>
+      <div class="skill-item reveal"><div class="skill-icon">🐳</div><div class="skill-name">Docker</div></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <p class="section-label reveal">Portfolio</p>
+    <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+    <p class="section-sub reveal">
+      A selection of things I've built with care and curiosity.
+    </p>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-title">NovaPay</div>
+        <div class="project-desc">
+          A real-time payment dashboard with fraud detection, 
+          transaction analytics, and multi-currency support.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">WebSocket</span>
+          <span class="project-tag">Redis</span>
+        </div>
+        <a href="#" class="project-link">Live Demo →</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-title">Flux Studio</div>
+        <div class="project-desc">
+          Collaborative design tool with real-time editing, 
+          version history, and AI-powered asset generation.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">WebRTC</span>
+          <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">Tailwind</span>
+        </div>
+        <a href="#" class="project-link">Live Demo →</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-title">Orbit CLI</div>
+        <div class="project-desc">
+          Developer CLI tool for scaffolding microservices, 
+          managing deployments, and monitoring infra.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Docker</span>
+          <span class="project-tag">Kubernetes</span>
+        </div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <p class="section-label reveal">Career</p>
+    <h2 class="section-title reveal">Work <span class="gradient-text">Experience</span></h2>
+    <p class="section-sub reveal">
+      Places I've contributed my skills and grown as a developer.
+    </p>
+    <div class="timeline">
+      <div class="timeline-item reveal-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024 — Present</div>
+          <h3 class="timeline-title">Senior Full-Stack Developer</h3>
+          <p class="timeline-company">TechCorp Inc.</p>
+          <p class="timeline-desc">Leading development of microservices architecture serving 1M+ users. Built real-time analytics dashboard and CI/CD pipeline.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2022 — 2024</div>
+          <h3 class="timeline-title">Full-Stack Developer</h3>
+          <p class="timeline-company">StartupXYZ</p>
+          <p class="timeline-desc">Developed core product features using React, Node.js, and MongoDB. Reduced load times by 40% and led 3 major releases.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2020 — 2022</div>
+          <h3 class="timeline-title">Junior Developer</h3>
+          <p class="timeline-company">WebAgency Co.</p>
+          <p class="timeline-desc">Built 15+ client websites and web apps. Migrated legacy jQuery codebase to React, improving maintainability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <p class="section-label reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
+    <div class="contact-container">
+      <div class="contact-info reveal-left">
+        <h3>Have a project in mind?</h3>
+        <p>
+          Whether it's a startup idea, a redesign, or just want to say hi — 
+          I'm always open to interesting conversations.
+        </p>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <a href="mailto:hello@abubakkar.dev">hello@abubakkar.dev</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <span style="color:#94A3B8;">Remote / Worldwide</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🐦</div>
+          <a href="#">@abubakkar_dev</a>
+        </div>
+      </div>
+      <form class="contact-form reveal-right" id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="#" title="GitHub">🐙</a>
+      <a href="#" title="LinkedIn">🔗</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+    </div>
+    <p>&copy; 2026 abubakkar. Built with ☕ &amp; determination.</p>
+  </footer>
+
+  <!-- AI Chatbot -->
+  <div class="chatbot-overlay" id="chatbotOverlay"></div>
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot-header">
+      <div class="chatbot-ai-avatar">🤖</div>
+      <div>
+        <div class="chatbot-title">AI Navigator</div>
+        <div class="chatbot-status">Online — Ask me anything about abubakkar</div>
+      </div>
+      <button class="chatbot-close" id="chatbotClose">✕</button>
+    </div>
+    <div class="chatbot-body" id="chatbotBody">
+      <div class="chat-message bot">
+        <div class="chat-avatar">🤖</div>
+        <div class="chat-bubble">
+          Hi! I'm abubakkar's AI assistant. Ask me anything about his skills, projects, experience, or background!
+        </div>
+      </div>
+    </div>
+    <div class="chatbot-input-area">
+      <div class="suggestion-chips" id="suggestionChips">
+        <button class="chip" data-query="What skills does abubakkar have?">Skills</button>
+        <button class="chip" data-query="Tell me about abubakkar's projects">Projects</button>
+        <button class="chip" data-query="What is abubakkar's experience?">Experience</button>
+        <button class="chip" data-query="How can I contact abubakkar?">Contact</button>
+      </div>
+      <div class="chatbot-input-wrapper">
+        <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Ask about abubakkar..." />
+        <button class="chatbot-send" id="chatbotSend">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbot FAB -->
+  <button class="chatbot-fab" id="chatbotFab" title="Ask AI about abubakkar">
+    <span class="fab-icon">💬</span>
+  </button>
+
+  <script src="js/chatbot.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
