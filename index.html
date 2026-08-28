@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abubakkar - Portfolio</title>
+  <title>Abubakkar — Full-Stack Developer & Problem Solver</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -16,216 +16,347 @@
 
   <!-- Navigation -->
   <nav>
-    <div class="logo">Abubakkar</div>
+    <div class="nav-logo">A<span class="nav-dot">·</span>B</div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="nav-link">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#capabilities"><span class="nav-num">01</span>Capabilities</a></li>
+      <li><a href="#works"><span class="nav-num">02</span>Works</a></li>
+      <li><a href="#chronicle"><span class="nav-num">03</span>Chronicle</a></li>
+      <li><a href="#inquiry"><span class="nav-num">04</span>Contact</a></li>
     </ul>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-actions">
+      <a href="#contact" class="nav-link-alt">Hire Me</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">
-          <span class="gradient-text">Abubakkar</span>
-        </h1>
-        <p class="hero-title">Full-Stack Developer &amp; Creative Problem Solver</p>
-        <p class="hero-desc">
-          I craft scalable, high-performance digital experiences 
-          that merge clean code with bold design. Turning complex 
-          ideas into elegant reality.
-        </p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Let's Talk</a>
-          <button class="btn btn-ghost" id="chatCTA">Ask AI About Me</button>
-        </div>
+    <div class="hero-badge">++Full-Stack Developer</div>
+    <h1 class="hero-name">Abubakkar<span class="hero-period">.</span></h1>
+    <div class="hero-roles">
+      <span class="hero-role active">Full-Stack Developer</span>
+      <span class="hero-role">Frontend Engineer</span>
+      <span class="hero-role">Backend Architect</span>
+      <span class="hero-role">Creative Problem Solver</span>
+    </div>
+    <p class="hero-tagline">Some developers write code. I ship what others merely pitch.</p>
+    <p class="hero-sub">30+ projects delivered across web platforms, enterprise systems, and real-time applications.</p>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">30+</div>
+        <div class="hero-stat-label">Projects Delivered</div>
       </div>
-      <div class="hero-avatar">
-        <div class="avatar-ring">
-          <img src="images/profile.jpg" alt="Abubakkar avatar" />
-        </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">20+</div>
+        <div class="hero-stat-label">Happy Clients</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">4+</div>
+        <div class="hero-stat-label">Years Experience</div>
       </div>
     </div>
+
+    <div class="hero-trusted">
+      <span class="hero-trusted-label">Trusted by</span>
+      <span class="hero-trusted-name">Black Wolf Media</span>
+      <span class="hero-trusted-dot">·</span>
+      <span class="hero-trusted-name">Zyro</span>
+      <span class="hero-trusted-dot">·</span>
+      <span class="hero-trusted-name">GrimZone</span>
+    </div>
+
+    <div class="hero-commission">
+      <span class="hero-commission-year">MMXXVI</span>
+      <span class="hero-commission-text">Accepting<br/>Commissions</span>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#works" class="btn btn-primary">See The Evidence</a>
+      <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      <button class="btn btn-ghost" id="chatCTA">Ask AI About Me</button>
+    </div>
+
     <div class="scroll-indicator">
-      <div class="mouse"><div class="wheel"></div></div>
+      <a href="#portrait">
+        <span>The Record ↓</span>
+      </a>
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- About -->
-  <section id="about">
-    <div class="section-number reveal">01</div>
-    <p class="section-label reveal">About Me</p>
-    <h2 class="section-title reveal">Who <span class="gradient-text">I Am</span></h2>
-    <div class="about-grid">
-      <div class="about-text reveal-left">
-        <p>
-          I'm <strong>Abubakkar</strong> — a full-stack developer with a passion for 
-          building digital products that are fast, intuitive, and visually striking. 
-          I specialize in React, Node.js, and modern web technologies.
-        </p>
-        <p>
-          When I'm not pushing pixels or debugging at 2 AM, you'll find me 
-          exploring new frameworks, contributing to open-source, or 
-          perfecting my pour-over coffee technique.
-        </p>
-        <p>
-          I believe great code is just the beginning — the real magic happens 
-          when performance meets purpose.
-        </p>
-      </div>
-      <div class="about-stats reveal-right">
-        <div class="stat-card">
-          <div class="stat-number">4+</div>
-          <div class="stat-label">Years Experience</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">30+</div>
-          <div class="stat-label">Projects Delivered</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">20+</div>
-          <div class="stat-label">Happy Clients</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">∞</div>
-          <div class="stat-label">Cups of Coffee</div>
-        </div>
-      </div>
+  <!-- Portrait -->
+  <section class="portrait-section" id="portrait">
+    <div class="portrait-container">
+      <img src="images/profile.jpg" alt="Abubakkar" class="portrait-img" />
+      <figcaption class="portrait-caption">Fig. 01 · The Architect</figcaption>
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- Skills -->
-  <section id="skills">
-    <div class="section-number reveal">02</div>
-    <p class="section-label reveal">My Skills</p>
-    <h2 class="section-title reveal">Tech <span class="gradient-text">Stack</span></h2>
-    <p class="section-sub reveal">
-      Technologies I work with daily to bring ideas to life.
-    </p>
-    <div class="skills-grid">
-      <div class="skill-item reveal"><img src="images/react.png" alt="React" class="skill-img" /><div class="skill-name">React</div></div>
-      <div class="skill-item reveal"><img src="images/nextjs.png" alt="Next.js" class="skill-img" /><div class="skill-name">Next.js</div></div>
-      <div class="skill-item reveal"><img src="images/typescript.png" alt="TypeScript" class="skill-img" /><div class="skill-name">TypeScript</div></div>
-      <div class="skill-item reveal"><img src="images/nodejs.png" alt="Node.js" class="skill-img" /><div class="skill-name">Node.js</div></div>
-      <div class="skill-item reveal"><img src="images/css.png" alt="CSS/Sass" class="skill-img" /><div class="skill-name">CSS/Sass</div></div>
-      <div class="skill-item reveal"><img src="images/python.png" alt="Python" class="skill-img" /><div class="skill-name">Python</div></div>
-      <div class="skill-item reveal"><img src="images/mongodb.png" alt="MongoDB" class="skill-img" /><div class="skill-name">MongoDB</div></div>
-      <div class="skill-item reveal"><img src="images/postgresql.png" alt="PostgreSQL" class="skill-img" /><div class="skill-name">PostgreSQL</div></div>
-      <div class="skill-item reveal"><img src="images/aws.png" alt="AWS" class="skill-img" /><div class="skill-name">AWS</div></div>
-      <div class="skill-item reveal"><img src="images/git.png" alt="Git" class="skill-img" /><div class="skill-name">Git</div></div>
-      <div class="skill-item reveal"><img src="images/docker.png" alt="Docker" class="skill-img" /><div class="skill-name">Docker</div></div>
-      <div class="skill-item reveal"><img src="images/vercel.png" alt="Vercel" class="skill-img" /><div class="skill-name">Vercel</div></div>
+  <!-- Inline Experience (like reference) -->
+  <section class="inline-experience">
+    <div class="inline-exp-header">
+      <span class="inline-exp-label">MMXXVI</span>
+      <span class="inline-exp-sub">In Service · MMXXII to Present</span>
     </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="section-number reveal">03</div>
-    <p class="section-label reveal">Portfolio</p>
-    <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
-    <p class="section-sub reveal">
-      A selection of things I've built with care and curiosity.
-    </p>
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-title">Black Wolf Media</div>
-        <div class="project-desc">
-          A full-service video editing and production agency website for Lahore, Pakistan. 
-          Features cinematic portfolio showcase, client testimonials, service booking, 
-          and AI-powered content solutions.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Next.js</span>
-          <span class="project-tag">React</span>
-          <span class="project-tag">Tailwind</span>
-          <span class="project-tag">Web Design</span>
-        </div>
-        <a href="https://blackwolfmediame.vercel.app" target="_blank" class="project-link">Live Demo →</a>
+    <div class="inline-exp-list">
+      <div class="inline-exp-item">
+        <div class="inline-exp-year">2024</div>
+        <div class="inline-exp-year-range">2024 to Present</div>
+        <div class="inline-exp-role">Senior Full-Stack Developer</div>
+        <div class="inline-exp-company">TechCorp Inc.</div>
       </div>
-      <div class="project-card reveal">
-        <div class="project-title">Zyro</div>
-        <div class="project-desc">
-          AI-powered web development platform that lets businesses launch websites in hours. 
-          Features conversion architecture, business automation, payment infrastructure, 
-          and custom SaaS solutions.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Next.js</span>
-          <span class="project-tag">TypeScript</span>
-          <span class="project-tag">AI</span>
-          <span class="project-tag">SaaS</span>
-        </div>
-        <a href="https://zyro-steel.vercel.app" target="_blank" class="project-link">Live Demo →</a>
+      <div class="inline-exp-item">
+        <div class="inline-exp-year">2022</div>
+        <div class="inline-exp-year-range">2022 to 2024</div>
+        <div class="inline-exp-role">Full-Stack Developer</div>
+        <div class="inline-exp-company">StartupXYZ</div>
       </div>
-      <div class="project-card reveal">
-        <div class="project-title">GrimZone</div>
-        <div class="project-desc">
-          Pakistan's premier Free Fire tournament platform. Players compete in 1v1 and 2v2 
-          tournaments, earn tokens, and win real prizes with a live world chat feature.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Next.js</span>
-          <span class="project-tag">React</span>
-          <span class="project-tag">Real-time</span>
-          <span class="project-tag">Gaming</span>
-        </div>
-        <a href="https://grimzone.vercel.app" target="_blank" class="project-link">Live Demo →</a>
+      <div class="inline-exp-item">
+        <div class="inline-exp-year">2020</div>
+        <div class="inline-exp-year-range">2020 to 2022</div>
+        <div class="inline-exp-role">Junior Developer</div>
+        <div class="inline-exp-company">WebAgency Co.</div>
+      </div>
+    </div>
+    <!-- Skills Marquee -->
+    <div class="skills-marquee">
+      <div class="marquee-track">
+        <span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Python</span>
+        <span>MongoDB</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span><span>Git</span>
+        <span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Python</span>
+        <span>MongoDB</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span><span>Git</span>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Experience -->
-  <section id="experience">
-    <div class="section-number reveal">04</div>
-    <p class="section-label reveal">Career</p>
-    <h2 class="section-title reveal">Work <span class="gradient-text">Experience</span></h2>
-    <p class="section-sub reveal">
-      Places I've contributed my skills and grown as a developer.
-    </p>
-    <div class="timeline">
-      <div class="timeline-item reveal-left">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-date">2024 — Present</div>
-          <h3 class="timeline-title">Senior Full-Stack Developer</h3>
-          <p class="timeline-company">TechCorp Inc.</p>
-          <p class="timeline-desc">Leading development of microservices architecture serving 1M+ users. Built real-time analytics dashboard and CI/CD pipeline.</p>
+  <!-- Capabilities -->
+  <section id="capabilities">
+    <div class="section-header">
+      <p class="section-label">Capabilities</p>
+      <h2 class="section-title">Four pillars.<br/><span class="gold">One standard of excellence.</span></h2>
+      <p class="section-desc">Others pitch. I deliver. The same rigor whether it's a startup MVP or a production platform, because results close the next deal, and the one after that.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-card">
+        <div class="cap-num">01</div>
+        <h3 class="cap-title">Frontend Engineering</h3>
+        <div class="cap-tags">
+          <span>React &amp; Next.js</span>
+          <span>TypeScript</span>
+          <span>Performance UI</span>
+        </div>
+        <p class="cap-desc">Interfaces that load fast and convert faster. React, Next.js, and TypeScript — built for scale, tuned for speed.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-num">02</div>
+        <h3 class="cap-title">Backend &amp; Systems</h3>
+        <div class="cap-tags">
+          <span>Node.js &amp; Python</span>
+          <span>API Architecture</span>
+          <span>Real-time</span>
+        </div>
+        <p class="cap-desc">REST APIs, microservices, and real-time systems under load. Built once, built right — running while competitors are still gathering requirements.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-num">03</div>
+        <h3 class="cap-title">Data &amp; Infrastructure</h3>
+        <div class="cap-tags">
+          <span>PostgreSQL &amp; MongoDB</span>
+          <span>AWS &amp; Docker</span>
+          <span>CI/CD</span>
+        </div>
+        <p class="cap-desc">Databases, containers, and cloud infrastructure carrying production workloads. If it isn't deployed, it doesn't count.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-num">04</div>
+        <h3 class="cap-title">Full-Stack Products</h3>
+        <div class="cap-tags">
+          <span>SaaS Platforms</span>
+          <span>E-Commerce</span>
+          <span>Gaming Systems</span>
+        </div>
+        <p class="cap-desc">End-to-end product builds — from database schema to pixel-perfect UI. Web, mobile, and real-time platforms that users return to.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- The Engagement -->
+  <section id="engagement">
+    <div class="section-header">
+      <p class="section-label">The Engagement</p>
+      <h2 class="section-title">Four moves.<br/><span class="gold">No games.</span></h2>
+      <p class="section-desc">This is what closing with me looks like. Simple on paper; rare in this industry.</p>
+    </div>
+    <div class="engagement-grid">
+      <div class="engagement-item">
+        <div class="engagement-roman">I.</div>
+        <h3 class="engagement-title">The Briefing</h3>
+        <p class="engagement-desc">You talk. I listen. No jargon, no theater. If I can't move your number, I'll say so in the first meeting and save us both a quarter.</p>
+      </div>
+      <div class="engagement-item">
+        <div class="engagement-roman">II.</div>
+        <h3 class="engagement-title">The Proposal</h3>
+        <p class="engagement-desc">Scope. Timeline. Number. One page. If it takes more than one page, someone is hiding something.</p>
+      </div>
+      <div class="engagement-item">
+        <div class="engagement-roman">III.</div>
+        <h3 class="engagement-title">The Build</h3>
+        <p class="engagement-desc">Weekly proof, not promises. You see working software every week while others send slide decks and invoices.</p>
+      </div>
+      <div class="engagement-item">
+        <div class="engagement-roman">IV.</div>
+        <h3 class="engagement-title">The Close</h3>
+        <p class="engagement-desc">Shipped. Documented. Yours. No lingering invoices, no hostage handovers, no vanishing act after the final payment clears.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- The Atelier / Instruments -->
+  <section id="instruments">
+    <div class="section-header">
+      <p class="section-label">The Atelier</p>
+      <h2 class="section-title">Instruments of the house,<br/><span class="gold">mastered.</span></h2>
+      <p class="section-desc">Tools don't win deals. Command of them does. This is the arsenal: every instrument kept sharp, chosen for endurance, not fashion.</p>
+    </div>
+    <div class="instruments-grid">
+      <div class="instrument-card">
+        <div class="instrument-label">Case I</div>
+        <h3 class="instrument-title">Frontend &amp; Frameworks</h3>
+        <ul class="instrument-list">
+          <li>React &amp; Next.js</li>
+          <li>TypeScript</li>
+          <li>Tailwind CSS</li>
+          <li>React Native</li>
+          <li>Performance Optimization</li>
+          <li>Responsive Systems</li>
+        </ul>
+      </div>
+      <div class="instrument-card">
+        <div class="instrument-label">Case II</div>
+        <h3 class="instrument-title">Backend &amp; APIs</h3>
+        <ul class="instrument-list">
+          <li>Node.js Services</li>
+          <li>Python &amp; FastAPI</li>
+          <li>REST &amp; GraphQL</li>
+          <li>WebSocket &amp; Real-time</li>
+          <li>Microservices</li>
+          <li>API Integrations</li>
+        </ul>
+      </div>
+      <div class="instrument-card">
+        <div class="instrument-label">Case III</div>
+        <h3 class="instrument-title">Data &amp; Cloud</h3>
+        <ul class="instrument-list">
+          <li>PostgreSQL</li>
+          <li>MongoDB &amp; Redis</li>
+          <li>AWS &amp; Docker</li>
+          <li>CI/CD Pipelines</li>
+          <li>Kubernetes</li>
+          <li>Infrastructure as Code</li>
+        </ul>
+      </div>
+      <div class="instrument-card">
+        <div class="instrument-label">Case IV</div>
+        <h3 class="instrument-title">Product &amp; Design</h3>
+        <ul class="instrument-list">
+          <li>UI/UX Design</li>
+          <li>SaaS Architecture</li>
+          <li>E-Commerce Systems</li>
+          <li>Gaming Platforms</li>
+          <li>Real-time Multiplayer</li>
+          <li>Performance Engineering</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Selected Works -->
+  <section id="works">
+    <div class="section-header">
+      <p class="section-label">Selected Works</p>
+      <h2 class="section-title">A gallery of<br/><span class="gold">shipped ambition.</span></h2>
+      <p class="section-desc">3 featured builds across web platforms, enterprise tools, and real-time systems. Some pieces stay confidential; NDAs work both ways.</p>
+    </div>
+
+    <!-- Flagship -->
+    <div class="work-flagship">
+      <div class="work-flagship-badge">★Flagship</div>
+      <div class="work-flagship-content">
+        <div class="work-flagship-num">01</div>
+        <h3 class="work-flagship-title">Black Wolf Media</h3>
+        <p class="work-flagship-tagline">Video Production Agency · Lahore, Pakistan</p>
+        <p class="work-flagship-desc">A full-service video editing and production agency website. Cinematic portfolio showcase, client testimonials, service booking, and AI-powered content solutions. 500+ projects, 6+ years in business.</p>
+        <div class="work-flagship-stats">
+          <span>500+ Projects</span>
+          <span>6+ Years</span>
+          <span>50+ Clients</span>
+        </div>
+        <div class="work-flagship-tech">
+          <span>Next.js</span><span>React</span><span>Tailwind</span><span>Web Design</span>
+        </div>
+        <div class="work-flagship-links">
+          <a href="https://blackwolfmediame.vercel.app" target="_blank" class="work-link">Case study→</a>
+          <a href="https://blackwolfmediame.vercel.app" target="_blank" class="work-link-live">Live ↗</a>
         </div>
       </div>
-      <div class="timeline-item reveal-right">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-date">2022 — 2024</div>
-          <h3 class="timeline-title">Full-Stack Developer</h3>
-          <p class="timeline-company">StartupXYZ</p>
-          <p class="timeline-desc">Developed core product features using React, Node.js, and MongoDB. Reduced load times by 40% and led 3 major releases.</p>
+      <div class="work-flagship-preview">
+        <div class="work-preview-frame">
+          <div class="work-preview-bar">
+            <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+          </div>
+          <div class="work-preview-content">
+            <span class="preview-text">blackwolfmediame.vercel.app</span>
+          </div>
         </div>
       </div>
-      <div class="timeline-item reveal-left">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-date">2020 — 2022</div>
-          <h3 class="timeline-title">Junior Developer</h3>
-          <p class="timeline-company">WebAgency Co.</p>
-          <p class="timeline-desc">Built 15+ client websites and web apps. Migrated legacy jQuery codebase to React, improving maintainability.</p>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="works-grid">
+      <div class="work-card">
+        <div class="work-card-num">02</div>
+        <h3 class="work-card-title">Zyro</h3>
+        <p class="work-card-tagline">AI Web Platform · SaaS</p>
+        <p class="work-card-desc">AI-powered web development platform. Conversion architecture, business automation, payment infrastructure, and custom SaaS solutions. Launch websites in hours, not days.</p>
+        <div class="work-card-stats">
+          <span>6 Live Tools</span>
+          <span>100/100 CWV</span>
+          <span>9 Products</span>
+        </div>
+        <div class="work-card-tech">
+          <span>Next.js</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>MongoDB</span><span>PostgreSQL</span><span>Tailwind</span>
+        </div>
+        <div class="work-card-links">
+          <a href="https://zyro-steel.vercel.app" target="_blank" class="work-link">Case study→</a>
+          <a href="https://zyro-steel.vercel.app" target="_blank" class="work-link-live">Live ↗</a>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card-num">03</div>
+        <h3 class="work-card-title">GrimZone</h3>
+        <p class="work-card-tagline">Gaming · Real-time Tournaments</p>
+        <p class="work-card-desc">Pakistan's premier Free Fire tournament platform. Players compete in 1v1 and 2v2 tournaments, earn tokens, and win real prizes with live world chat.</p>
+        <div class="work-card-stats">
+          <span>348+ Players</span>
+          <span>4 Tournaments</span>
+          <span>4.9 Rating</span>
+        </div>
+        <div class="work-card-tech">
+          <span>Next.js</span><span>React</span><span>Real-time</span><span>Gaming</span>
+        </div>
+        <div class="work-card-links">
+          <a href="https://grimzone.vercel.app" target="_blank" class="work-link">Case study→</a>
+          <a href="https://grimzone.vercel.app" target="_blank" class="work-link-live">Live ↗</a>
         </div>
       </div>
     </div>
@@ -233,53 +364,226 @@
 
   <div class="divider"></div>
 
-  <!-- Contact -->
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="section-header">
+      <p class="section-label">Counsel on Record</p>
+      <h2 class="section-title">Verdicts from<br/><span class="gold">the clients themselves.</span></h2>
+      <p class="section-desc">Every card opens the public record. Published with their ratings.</p>
+    </div>
+    <div class="testimonial-stats-row">
+      <div class="testimonial-stat">
+        <div class="testimonial-stat-num">30+</div>
+        <div class="testimonial-stat-label">Projects</div>
+      </div>
+      <div class="testimonial-stat">
+        <div class="testimonial-stat-num">4.9★</div>
+        <div class="testimonial-stat-label">Average Rating</div>
+      </div>
+      <div class="testimonial-stat">
+        <div class="testimonial-stat-num">100%</div>
+        <div class="testimonial-stat-label">Committed to Quality</div>
+      </div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card testimonial-featured">
+        <div class="testimonial-rating">5.0★</div>
+        <div class="testimonial-badge">Featured Verdict</div>
+        <p class="testimonial-text">"You have the ones that simply do the bare minimum, and then you have this man that goes above and beyond. His consistency and effort is unmatched."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-tag">Enterprise Client</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">5.0★</div>
+        <p class="testimonial-text">"He never once said what you're asking is out of scope. He makes very complex things look easy and solvable."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-tag">Full-Stack Client</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">5.0★</div>
+        <p class="testimonial-text">"He executed the project with excellent quality and exceeded my expectations. He met the deadline weeks earlier than what I set."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-tag">SaaS Client</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">5.0★</div>
+        <p class="testimonial-text">"Delivery time? Wow. Update times? Even faster. Many thanks for all the late nights and early mornings working on bugs."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-tag">Web Platform Client</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">5.0★</div>
+        <p class="testimonial-text">"He stayed with me half an hour, solved every problem, and refused to get paid because he didn't work on it enough. Very honest person."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-tag">Game Dev Client</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Chronicle / Timeline -->
+  <section id="chronicle">
+    <div class="section-header">
+      <p class="section-label">The Chronicle</p>
+      <h2 class="section-title">A record of<br/><span class="gold">shipped ambition.</span></h2>
+      <p class="section-desc">Three positions. Zero exits without shipping. Every engagement dated, delivered, accounted for. That's the record.</p>
+    </div>
+    <div class="chronicle-timeline">
+      <div class="chronicle-item">
+        <div class="chronicle-year">2024</div>
+        <div class="chronicle-dot"></div>
+        <div class="chronicle-content">
+          <div class="chronicle-date">2024 to Present</div>
+          <h3 class="chronicle-role">Senior Full-Stack Developer</h3>
+          <p class="chronicle-company">TechCorp Inc.</p>
+          <p class="chronicle-desc">Leading development of microservices architecture serving 1M+ users. Built real-time analytics dashboard and CI/CD pipeline.</p>
+        </div>
+      </div>
+      <div class="chronicle-item">
+        <div class="chronicle-year">2022</div>
+        <div class="chronicle-dot"></div>
+        <div class="chronicle-content">
+          <div class="chronicle-date">2022 to 2024</div>
+          <h3 class="chronicle-role">Full-Stack Developer</h3>
+          <p class="chronicle-company">StartupXYZ</p>
+          <p class="chronicle-desc">Developed core product features using React, Node.js, and MongoDB. Reduced load times by 40% and led 3 major releases.</p>
+        </div>
+      </div>
+      <div class="chronicle-item">
+        <div class="chronicle-year">2020</div>
+        <div class="chronicle-dot"></div>
+        <div class="chronicle-content">
+          <div class="chronicle-date">2020 to 2022</div>
+          <h3 class="chronicle-role">Junior Developer</h3>
+          <p class="chronicle-company">WebAgency Co.</p>
+          <p class="chronicle-desc">Built 15+ client websites and web apps. Migrated legacy jQuery codebase to React, improving maintainability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-header">
+      <p class="section-label">Before You Write</p>
+      <h2 class="section-title">Asked before<br/><span class="gold">every engagement.</span></h2>
+      <p class="section-desc">Five answers up front. If these cover it, the briefing below is already halfway done.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-num">01.</span>
+          <span class="faq-text">What does an engagement cost?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>A fixed number on one page, set in the proposal. Enterprise work is quoted per engagement; smaller builds carry fixed prices. You know the figure before we shake hands, and it does not drift.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-num">02.</span>
+          <span class="faq-text">How fast can you ship?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>A focused build ships in weeks, not quarters. An MVP in 8 weeks. A game in 72 hours. Weekly proof from week one, so you watch it exist instead of waiting for it.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-num">03.</span>
+          <span class="faq-text">Do you work remotely?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>I have delivered for clients across the world, entirely remote. Time zones are a scheduling detail, not a barrier.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-num">04.</span>
+          <span class="faq-text">Who owns the work?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>You do. Code, designs, documentation, credentials: handed over at close. No lingering access, no hostage source. Once payment clears, it is yours in full.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-num">05.</span>
+          <span class="faq-text">What do you need from me to start?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>One honest briefing: the system causing the most pain, what it costs you, and a decision maker I can talk to directly. That is the whole checklist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Contact / Inquiry -->
   <section id="contact">
-    <div class="section-number reveal">05</div>
-    <p class="section-label reveal">Get In Touch</p>
-    <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
-    <div class="contact-container">
-      <div class="contact-info reveal-left">
-        <h3>Have a project in mind?</h3>
-        <p>
-          Whether it's a startup idea, a redesign, or just want to say hi — 
-          I'm always open to interesting conversations.
-        </p>
-        <div class="contact-item">
-          <div class="contact-icon"><img src="images/gmail.png" alt="Email" class="contact-img" /></div>
-          <a href="mailto:hello@Abubakkar.dev">hello@Abubakkar.dev</a>
+    <div class="section-header">
+      <p class="section-label">Closing Briefing &amp; Inquiry</p>
+      <h2 class="section-title">Let's close<br/><span class="gold">the next flagship.</span></h2>
+    </div>
+    <div class="inquiry-form-container">
+      <form class="inquiry-form" id="contactForm">
+        <div class="inquiry-row">
+          <div class="inquiry-field">
+            <label class="inquiry-label">My name is</label>
+            <input type="text" placeholder="Your Name" required class="inquiry-input" />
+          </div>
+          <div class="inquiry-field">
+            <label class="inquiry-label">I am looking to develop</label>
+            <input type="text" placeholder="A web application" required class="inquiry-input" />
+          </div>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <span style="color:#94A3B8;">Remote / Worldwide</span>
+        <div class="inquiry-field">
+          <label class="inquiry-label">You can reach me at</label>
+          <input type="email" placeholder="your@email.com" required class="inquiry-input" />
         </div>
-        <div class="contact-item">
-          <div class="contact-icon"><img src="images/x.png" alt="Twitter" class="contact-img" /></div>
-          <a href="#">@Abubakkar_dev</a>
+        <div class="inquiry-field">
+          <label class="inquiry-label">Project details</label>
+          <textarea placeholder="Tell me about your project..." required class="inquiry-input inquiry-textarea"></textarea>
         </div>
-      </div>
-      <form class="contact-form reveal-right" id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
+        <button type="submit" class="btn btn-primary inquiry-submit">Transmit Briefing</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <div class="divider"></div>
   <footer>
-    <div class="social-links">
-      <a href="#" title="GitHub">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-      </a>
-      <a href="#" title="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn" class="social-img" /></a>
-      <a href="#" title="Twitter"><img src="images/x.png" alt="X / Twitter" class="social-img" /></a>
-      <a href="#" title="Instagram"><img src="images/ig.png" alt="Instagram" class="social-img" /></a>
+    <div class="footer-content">
+      <div class="footer-logo">A<span class="nav-dot">·</span>B</div>
+      <div class="footer-links">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#works">Works</a>
+        <a href="#chronicle">Chronicle</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="#" title="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn" class="social-img" /></a>
+        <a href="#" title="Twitter"><img src="images/x.png" alt="X / Twitter" class="social-img" /></a>
+        <a href="#" title="Instagram"><img src="images/ig.png" alt="Instagram" class="social-img" /></a>
+      </div>
+      <p class="footer-copy">© MMXXVI Abubakkar</p>
     </div>
-    <p>&copy; MMXXVI Abubakkar. Built with precision.</p>
   </footer>
 
   <!-- AI Chatbot -->
@@ -297,7 +601,7 @@
       <div class="chat-message bot">
         <div class="chat-avatar">🤖</div>
         <div class="chat-bubble">
-          Hi! I'm Abubakkar's AI assistant. Ask me about his projects — <b>Black Wolf Media</b> 🎬, <b>Zyro</b> ⚡, or <b>GrimZone</b> 🎮 — or his skills, experience, and more!
+          Hi! I'm Abubakkar's AI assistant. Ask me about his projects — <b>Black Wolf Media</b>, <b>Zyro</b>, or <b>GrimZone</b> — or his skills, experience, and more!
         </div>
       </div>
     </div>

@@ -102,21 +102,6 @@ navLinksAll.forEach(link => {
 
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 50);
-
-  let current = '';
-  sections.forEach(section => {
-    const top = section.offsetTop - 150;
-    if (window.scrollY >= top) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  navLinksAll.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === `#${current}`) {
-      link.classList.add('active');
-    }
-  });
 });
 
 // Scroll reveal animations
@@ -132,35 +117,44 @@ document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => 
   revealObserver.observe(el);
 });
 
+// Hero role rotation
+const heroRoles = document.querySelectorAll('.hero-role');
+let currentRole = 0;
+if (heroRoles.length > 0) {
+  setInterval(() => {
+    heroRoles[currentRole].classList.remove('active');
+    currentRole = (currentRole + 1) % heroRoles.length;
+    heroRoles[currentRole].classList.add('active');
+  }, 3000);
+}
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isActive = item.classList.contains('active');
+
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+    if (!isActive) {
+      item.classList.add('active');
+    }
+  });
+});
+
 // Contact form
 document.getElementById('contactForm')?.addEventListener('submit', function(e) {
   e.preventDefault();
   const btn = this.querySelector('button[type="submit"]');
   const original = btn.textContent;
   btn.textContent = '✓ Sent!';
-  btn.style.background = 'linear-gradient(135deg, #22C55E, #16A34A)';
+  btn.style.background = '#22C55E';
   setTimeout(() => {
     btn.textContent = original;
     btn.style.background = '';
     this.reset();
   }, 3000);
 });
-
-// Typing animation for hero title
-const heroTitle = document.querySelector('.hero-title');
-if (heroTitle) {
-  const text = heroTitle.textContent;
-  heroTitle.textContent = '';
-  let i = 0;
-  const type = () => {
-    if (i < text.length) {
-      heroTitle.textContent += text.charAt(i);
-      i++;
-      setTimeout(type, 30);
-    }
-  };
-  setTimeout(type, 500);
-}
 
 // Init
 document.addEventListener('DOMContentLoaded', () => {
