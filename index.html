@@ -3,276 +3,246 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abubakkar — Full-Stack Developer & Problem Solver</title>
+  <title>Abubakkar | Full-Stack Developer & Problem Solver</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Particle Background -->
   <canvas id="particleCanvas"></canvas>
 
-  <!-- Navigation -->
+  <!-- ===== NAVIGATION ===== -->
   <nav>
-    <div class="nav-logo">A<span class="nav-dot">·</span>B</div>
+    <a href="#home" class="nav-logo">A<span>·</span>B</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#capabilities"><span class="nav-num">01</span>Capabilities</a></li>
-      <li><a href="#works"><span class="nav-num">02</span>Works</a></li>
-      <li><a href="#chronicle"><span class="nav-num">03</span>Chronicle</a></li>
-      <li><a href="#inquiry"><span class="nav-num">04</span>Contact</a></li>
+      <li><a href="#capabilities"><span>01</span>Capabilities</a></li>
+      <li><a href="#works"><span>02</span>Works</a></li>
+      <li><a href="#chronicle"><span>03</span>Chronicle</a></li>
+      <li><a href="#notes"><span>04</span>Contact</a></li>
     </ul>
-    <div class="nav-actions">
-      <a href="#contact" class="nav-link-alt">Hire Me</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="nav-right">
+      <a href="#chronicle" class="nav-btn-text">The Record ↓</a>
+      <a href="#notes" class="nav-btn-solid">Hire Me</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="home">
     <div class="hero-badge">++Full-Stack Developer</div>
-    <h1 class="hero-name">Abubakkar<span class="hero-period">.</span></h1>
-    <div class="hero-roles">
-      <span class="hero-role active">Full-Stack Developer</span>
-      <span class="hero-role">Frontend Engineer</span>
-      <span class="hero-role">Backend Architect</span>
-      <span class="hero-role">Creative Problem Solver</span>
+    <h1 class="hero-name">
+      <span class="hero-name-line1">Abubakkar</span><span class="hero-name-line2">.</span>
+    </h1>
+    <div class="hero-roles" id="heroRoles">
+      <span class="hero-role" style="display:inline">Full-Stack Developer</span>
     </div>
     <p class="hero-tagline">Some developers write code. I ship what others merely pitch.</p>
     <p class="hero-sub">30+ projects delivered across web platforms, enterprise systems, and real-time applications.</p>
 
+    <div class="hero-commission">
+      <div class="hero-comm-left">
+        <span class="hero-comm-year">MMXXVI</span>
+      </div>
+      <div class="hero-comm-divider"></div>
+      <div class="hero-comm-right">
+        <span>Accepting</span>
+        <span>Commissions</span>
+      </div>
+    </div>
+
+    <div class="hero-row">
+      <a href="#works" class="btn btn-primary">See The Evidence ↓</a>
+    </div>
+
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-num">30+</div>
-        <div class="hero-stat-label">Projects Delivered</div>
+        <span class="hero-stat-num">30+</span>
+        <span class="hero-stat-label">Projects Delivered</span>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">20+</div>
-        <div class="hero-stat-label">Happy Clients</div>
+        <span class="hero-stat-num">20+</span>
+        <span class="hero-stat-label">Happy Clients</span>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">4+</div>
-        <div class="hero-stat-label">Years Experience</div>
+        <span class="hero-stat-num">4+</span>
+        <span class="hero-stat-label">Years Experience</span>
       </div>
     </div>
 
     <div class="hero-trusted">
-      <span class="hero-trusted-label">Trusted by</span>
-      <span class="hero-trusted-name">Black Wolf Media</span>
-      <span class="hero-trusted-dot">·</span>
-      <span class="hero-trusted-name">Zyro</span>
-      <span class="hero-trusted-dot">·</span>
-      <span class="hero-trusted-name">GrimZone</span>
-    </div>
-
-    <div class="hero-commission">
-      <span class="hero-commission-year">MMXXVI</span>
-      <span class="hero-commission-text">Accepting<br/>Commissions</span>
-    </div>
-
-    <div class="hero-btns">
-      <a href="#works" class="btn btn-primary">See The Evidence</a>
-      <a href="#contact" class="btn btn-outline">Let's Talk</a>
-      <button class="btn btn-ghost" id="chatCTA">Ask AI About Me</button>
-    </div>
-
-    <div class="scroll-indicator">
-      <a href="#portrait">
-        <span>The Record ↓</span>
-      </a>
+      <span class="trusted-label">Trusted by</span>
+      <span class="trusted-name">Black Wolf Media</span>
+      <span class="trusted-name">Zyro</span>
+      <span class="trusted-name">GrimZone</span>
     </div>
   </section>
 
-  <!-- Portrait -->
-  <section class="portrait-section" id="portrait">
-    <div class="portrait-container">
+  <!-- ===== PORTRAIT ===== -->
+  <section class="portrait-section">
+    <div class="portrait-wrap">
       <img src="images/profile.jpg" alt="Abubakkar" class="portrait-img" />
-      <figcaption class="portrait-caption">Fig. 01 · The Architect</figcaption>
+      <figcaption class="portrait-fig">Fig. 01 · The Architect</figcaption>
     </div>
   </section>
 
-  <!-- Inline Experience (like reference) -->
-  <section class="inline-experience">
-    <div class="inline-exp-header">
-      <span class="inline-exp-label">MMXXVI</span>
-      <span class="inline-exp-sub">In Service · MMXXII to Present</span>
+  <!-- ===== INLINE EXPERIENCE ===== -->
+  <section class="inline-exp">
+    <div class="inline-exp-top">
+      <span class="gold-text">MMXXVI</span>
+      <span class="dim-text">In Service · MMXXII to Present</span>
     </div>
-    <div class="inline-exp-list">
-      <div class="inline-exp-item">
-        <div class="inline-exp-year">2024</div>
-        <div class="inline-exp-year-range">2024 to Present</div>
-        <div class="inline-exp-role">Senior Full-Stack Developer</div>
-        <div class="inline-exp-company">TechCorp Inc.</div>
+    <div class="inline-exp-grid">
+      <div class="inline-exp-card">
+        <div class="ie-year">2024</div>
+        <div class="ie-range">2024 to Present</div>
+        <div class="ie-role">Senior Full-Stack Developer</div>
+        <div class="ie-company">TechCorp Inc.</div>
       </div>
-      <div class="inline-exp-item">
-        <div class="inline-exp-year">2022</div>
-        <div class="inline-exp-year-range">2022 to 2024</div>
-        <div class="inline-exp-role">Full-Stack Developer</div>
-        <div class="inline-exp-company">StartupXYZ</div>
+      <div class="inline-exp-card">
+        <div class="ie-year">2022</div>
+        <div class="ie-range">2022 to 2024</div>
+        <div class="ie-role">Full-Stack Developer</div>
+        <div class="ie-company">StartupXYZ</div>
       </div>
-      <div class="inline-exp-item">
-        <div class="inline-exp-year">2020</div>
-        <div class="inline-exp-year-range">2020 to 2022</div>
-        <div class="inline-exp-role">Junior Developer</div>
-        <div class="inline-exp-company">WebAgency Co.</div>
+      <div class="inline-exp-card">
+        <div class="ie-year">2020</div>
+        <div class="ie-range">2020 to 2022</div>
+        <div class="ie-role">Junior Developer</div>
+        <div class="ie-company">WebAgency Co.</div>
       </div>
     </div>
+
     <!-- Skills Marquee -->
     <div class="skills-marquee">
       <div class="marquee-track">
-        <span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Python</span>
-        <span>MongoDB</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span><span>Git</span>
-        <span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Python</span>
-        <span>MongoDB</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span><span>Git</span>
+        <span>React &amp; Next.js</span>
+        <span>TypeScript</span>
+        <span>Node.js</span>
+        <span>Python</span>
+        <span>UI/UX Design</span>
+        <span>Mobile Development</span>
+        <span>Database Systems</span>
+        <span>Cloud Infrastructure</span>
+        <span>React &amp; Next.js</span>
+        <span>TypeScript</span>
+        <span>Node.js</span>
+        <span>Python</span>
+        <span>UI/UX Design</span>
+        <span>Mobile Development</span>
+        <span>Database Systems</span>
+        <span>Cloud Infrastructure</span>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Capabilities -->
+  <!-- ===== CAPABILITIES ===== -->
   <section id="capabilities">
-    <div class="section-header">
-      <p class="section-label">Capabilities</p>
-      <h2 class="section-title">Four pillars.<br/><span class="gold">One standard of excellence.</span></h2>
-      <p class="section-desc">Others pitch. I deliver. The same rigor whether it's a startup MVP or a production platform, because results close the next deal, and the one after that.</p>
+    <div class="sec-header">
+      <p class="sec-label">Capabilities</p>
+      <h2 class="sec-title">Four pillars.<br/><span class="gold-text">One standard of excellence.</span></h2>
+      <p class="sec-desc">Others pitch. I deliver. The same rigor whether it's a startup MVP or a production platform, because results close the next deal, and the one after that.</p>
     </div>
     <div class="cap-grid">
       <div class="cap-card">
         <div class="cap-num">01</div>
-        <h3 class="cap-title">Frontend Engineering</h3>
-        <div class="cap-tags">
-          <span>React &amp; Next.js</span>
-          <span>TypeScript</span>
-          <span>Performance UI</span>
-        </div>
-        <p class="cap-desc">Interfaces that load fast and convert faster. React, Next.js, and TypeScript — built for scale, tuned for speed.</p>
+        <h3>Artificial Intelligence</h3>
+        <div class="cap-tags"><span>Deep Learning</span><span>Predictive Modeling</span><span>Agentic AI</span></div>
+        <p>Intelligence that ships: deep-learning pipelines and autonomous agents running in production today, not slideware. If it isn't deployed, it doesn't count.</p>
       </div>
       <div class="cap-card">
         <div class="cap-num">02</div>
-        <h3 class="cap-title">Backend &amp; Systems</h3>
-        <div class="cap-tags">
-          <span>Node.js &amp; Python</span>
-          <span>API Architecture</span>
-          <span>Real-time</span>
-        </div>
-        <p class="cap-desc">REST APIs, microservices, and real-time systems under load. Built once, built right — running while competitors are still gathering requirements.</p>
+        <h3>Enterprise Ecosystems</h3>
+        <div class="cap-tags"><span>ERP &amp; CRM Architecture</span><span>Global Scale</span><span>Process Automation</span></div>
+        <p>ERP &amp; CRM systems carrying thousands of concurrent operations for multinationals. Built once, built right, running while your competitors are still gathering requirements.</p>
       </div>
       <div class="cap-card">
         <div class="cap-num">03</div>
-        <h3 class="cap-title">Data &amp; Infrastructure</h3>
-        <div class="cap-tags">
-          <span>PostgreSQL &amp; MongoDB</span>
-          <span>AWS &amp; Docker</span>
-          <span>CI/CD</span>
-        </div>
-        <p class="cap-desc">Databases, containers, and cloud infrastructure carrying production workloads. If it isn't deployed, it doesn't count.</p>
+        <h3>Interactive Media &amp; Game Dev</h3>
+        <div class="cap-tags"><span>Immersive Mechanics</span><span>Physics Engines</span><span>Virtual Realities</span></div>
+        <p>Worlds players return to: robust gameplay systems, physically believable simulation, and multiplayer that holds up under load.</p>
       </div>
       <div class="cap-card">
         <div class="cap-num">04</div>
-        <h3 class="cap-title">Full-Stack Products</h3>
-        <div class="cap-tags">
-          <span>SaaS Platforms</span>
-          <span>E-Commerce</span>
-          <span>Gaming Systems</span>
-        </div>
-        <p class="cap-desc">End-to-end product builds — from database schema to pixel-perfect UI. Web, mobile, and real-time platforms that users return to.</p>
+        <h3>Omnichannel Applications</h3>
+        <div class="cap-tags"><span>High-Performance Web</span><span>iOS &amp; Android</span><span>Unified Experience</span></div>
+        <p>Web, iOS, and Android experiences so seamless customers never think about the screen they're holding. They just buy, play, and come back.</p>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- The Engagement -->
+  <!-- ===== ENGAGEMENT ===== -->
   <section id="engagement">
-    <div class="section-header">
-      <p class="section-label">The Engagement</p>
-      <h2 class="section-title">Four moves.<br/><span class="gold">No games.</span></h2>
-      <p class="section-desc">This is what closing with me looks like. Simple on paper; rare in this industry.</p>
+    <div class="sec-header">
+      <p class="sec-label">The Engagement</p>
+      <h2 class="sec-title">Four moves.<br/><span class="gold-text">No games.</span></h2>
+      <p class="sec-desc">This is what closing with me looks like. Simple on paper; rare in this industry.</p>
     </div>
-    <div class="engagement-grid">
-      <div class="engagement-item">
-        <div class="engagement-roman">I.</div>
-        <h3 class="engagement-title">The Briefing</h3>
-        <p class="engagement-desc">You talk. I listen. No jargon, no theater. If I can't move your number, I'll say so in the first meeting and save us both a quarter.</p>
+    <div class="eng-grid">
+      <div class="eng-card">
+        <div class="eng-num">I.</div>
+        <h3>The Briefing</h3>
+        <p>You talk. I listen. No jargon, no theater. If I can't move your number, I'll say so in the first meeting and save us both a quarter.</p>
       </div>
-      <div class="engagement-item">
-        <div class="engagement-roman">II.</div>
-        <h3 class="engagement-title">The Proposal</h3>
-        <p class="engagement-desc">Scope. Timeline. Number. One page. If it takes more than one page, someone is hiding something.</p>
+      <div class="eng-card">
+        <div class="eng-num">II.</div>
+        <h3>The Proposal</h3>
+        <p>Scope. Timeline. Number. One page. If it takes more than one page, someone is hiding something.</p>
       </div>
-      <div class="engagement-item">
-        <div class="engagement-roman">III.</div>
-        <h3 class="engagement-title">The Build</h3>
-        <p class="engagement-desc">Weekly proof, not promises. You see working software every week while others send slide decks and invoices.</p>
+      <div class="eng-card">
+        <div class="eng-num">III.</div>
+        <h3>The Build</h3>
+        <p>Weekly proof, not promises. You see working software every week while others send slide decks and invoices.</p>
       </div>
-      <div class="engagement-item">
-        <div class="engagement-roman">IV.</div>
-        <h3 class="engagement-title">The Close</h3>
-        <p class="engagement-desc">Shipped. Documented. Yours. No lingering invoices, no hostage handovers, no vanishing act after the final payment clears.</p>
+      <div class="eng-card">
+        <div class="eng-num">IV.</div>
+        <h3>The Close</h3>
+        <p>Shipped. Documented. Yours. No lingering invoices, no hostage handovers, no vanishing act after the final payment clears.</p>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- The Atelier / Instruments -->
+  <!-- ===== INSTRUMENTS ===== -->
   <section id="instruments">
-    <div class="section-header">
-      <p class="section-label">The Atelier</p>
-      <h2 class="section-title">Instruments of the house,<br/><span class="gold">mastered.</span></h2>
-      <p class="section-desc">Tools don't win deals. Command of them does. This is the arsenal: every instrument kept sharp, chosen for endurance, not fashion.</p>
+    <div class="sec-header">
+      <p class="sec-label">The Atelier</p>
+      <h2 class="sec-title">Instruments of the house,<br/><span class="gold-text">mastered.</span></h2>
+      <p class="sec-desc">Tools don't win deals. Command of them does. This is the arsenal: every instrument kept sharp, chosen for endurance, not fashion.</p>
     </div>
-    <div class="instruments-grid">
-      <div class="instrument-card">
-        <div class="instrument-label">Case I</div>
-        <h3 class="instrument-title">Frontend &amp; Frameworks</h3>
-        <ul class="instrument-list">
-          <li>React &amp; Next.js</li>
-          <li>TypeScript</li>
-          <li>Tailwind CSS</li>
-          <li>React Native</li>
-          <li>Performance Optimization</li>
-          <li>Responsive Systems</li>
+    <div class="inst-grid">
+      <div class="inst-card">
+        <div class="inst-label">Case I</div>
+        <h3>Intelligence &amp; Data</h3>
+        <ul>
+          <li>Python</li><li>PyTorch &amp; TensorFlow</li><li>LangChain &amp; RAG Pipelines</li><li>Vector Databases</li><li>OpenAI &amp; Claude APIs</li><li>MLOps &amp; Evaluation</li>
         </ul>
       </div>
-      <div class="instrument-card">
-        <div class="instrument-label">Case II</div>
-        <h3 class="instrument-title">Backend &amp; APIs</h3>
-        <ul class="instrument-list">
-          <li>Node.js Services</li>
-          <li>Python &amp; FastAPI</li>
-          <li>REST &amp; GraphQL</li>
-          <li>WebSocket &amp; Real-time</li>
-          <li>Microservices</li>
-          <li>API Integrations</li>
+      <div class="inst-card">
+        <div class="inst-label">Case II</div>
+        <h3>Enterprise Systems</h3>
+        <ul>
+          <li>Node.js &amp; Express</li><li>PostgreSQL &amp; MongoDB</li><li>Custom ERP / CRM Builds</li><li>Process Automation</li><li>API Integrations</li><li>AWS &amp; Cloud</li>
         </ul>
       </div>
-      <div class="instrument-card">
-        <div class="instrument-label">Case III</div>
-        <h3 class="instrument-title">Data &amp; Cloud</h3>
-        <ul class="instrument-list">
-          <li>PostgreSQL</li>
-          <li>MongoDB &amp; Redis</li>
-          <li>AWS &amp; Docker</li>
-          <li>CI/CD Pipelines</li>
-          <li>Kubernetes</li>
-          <li>Infrastructure as Code</li>
+      <div class="inst-card">
+        <div class="inst-label">Case III</div>
+        <h3>Interactive &amp; Games</h3>
+        <ul>
+          <li>React &amp; Next.js</li><li>Real-time Systems</li><li>WebSocket &amp; Multiplayer</li><li>Physics Simulation</li><li>Performance Optimization</li><li>Responsive UI</li>
         </ul>
       </div>
-      <div class="instrument-card">
-        <div class="instrument-label">Case IV</div>
-        <h3 class="instrument-title">Product &amp; Design</h3>
-        <ul class="instrument-list">
-          <li>UI/UX Design</li>
-          <li>SaaS Architecture</li>
-          <li>E-Commerce Systems</li>
-          <li>Gaming Platforms</li>
-          <li>Real-time Multiplayer</li>
-          <li>Performance Engineering</li>
+      <div class="inst-card">
+        <div class="inst-label">Case IV</div>
+        <h3>Omnichannel &amp; Web</h3>
+        <ul>
+          <li>Next.js &amp; React</li><li>React Native</li><li>TypeScript</li><li>Node.js Services</li><li>PostgreSQL</li><li>Tailwind CSS Systems</li>
         </ul>
       </div>
     </div>
@@ -280,83 +250,98 @@
 
   <div class="divider"></div>
 
-  <!-- Selected Works -->
+  <!-- ===== SELECTED WORKS ===== -->
   <section id="works">
-    <div class="section-header">
-      <p class="section-label">Selected Works</p>
-      <h2 class="section-title">A gallery of<br/><span class="gold">shipped ambition.</span></h2>
-      <p class="section-desc">3 featured builds across web platforms, enterprise tools, and real-time systems. Some pieces stay confidential; NDAs work both ways.</p>
+    <div class="sec-header">
+      <p class="sec-label">Selected Works</p>
+      <h2 class="sec-title">A gallery of<br/><span class="gold-text">shipped ambition.</span></h2>
+      <p class="sec-desc">3 featured builds on display across web platforms, enterprise tools, and real-time systems. Some pieces stay confidential; NDAs work both ways.</p>
     </div>
 
-    <!-- Flagship -->
-    <div class="work-flagship">
-      <div class="work-flagship-badge">★Flagship</div>
-      <div class="work-flagship-content">
-        <div class="work-flagship-num">01</div>
-        <h3 class="work-flagship-title">Black Wolf Media</h3>
-        <p class="work-flagship-tagline">Video Production Agency · Lahore, Pakistan</p>
-        <p class="work-flagship-desc">A full-service video editing and production agency website. Cinematic portfolio showcase, client testimonials, service booking, and AI-powered content solutions. 500+ projects, 6+ years in business.</p>
-        <div class="work-flagship-stats">
-          <span>500+ Projects</span>
-          <span>6+ Years</span>
-          <span>50+ Clients</span>
-        </div>
-        <div class="work-flagship-tech">
-          <span>Next.js</span><span>React</span><span>Tailwind</span><span>Web Design</span>
-        </div>
-        <div class="work-flagship-links">
-          <a href="https://blackwolfmediame.vercel.app" target="_blank" class="work-link">Case study→</a>
-          <a href="https://blackwolfmediame.vercel.app" target="_blank" class="work-link-live">Live ↗</a>
-        </div>
-      </div>
-      <div class="work-flagship-preview">
-        <div class="work-preview-frame">
-          <div class="work-preview-bar">
-            <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+    <!-- Work 01 - Flagship -->
+    <div class="work-block">
+      <div class="work-num">01</div>
+      <div class="work-badge-row"><span class="work-badge">★Flagship</span></div>
+      <div class="work-split">
+        <div class="work-info">
+          <h3 class="work-title">Black Wolf Media</h3>
+          <p class="work-subtitle">Video Production Agency · Lahore, Pakistan</p>
+          <p class="work-desc">A full-service video editing and production agency. Cinematic portfolio showcase, client testimonials, service booking, and AI-powered content solutions. 500+ projects delivered.</p>
+          <div class="work-stats">
+            <span>500+ Projects</span><span>6+ Years</span><span>50+ Clients</span>
           </div>
-          <div class="work-preview-content">
-            <span class="preview-text">blackwolfmediame.vercel.app</span>
+          <div class="work-tech">
+            <span>Next.js</span><span>React</span><span>Tailwind</span><span>Web Design</span>
           </div>
+          <div class="work-links">
+            <a href="https://blackwolfmediame.vercel.app" target="_blank">Case study→</a>
+            <a href="https://blackwolfmediame.vercel.app" target="_blank" class="work-live">Live ↗</a>
+          </div>
+        </div>
+        <div class="work-preview">
+          <div class="preview-chrome">
+            <div class="preview-dots"><span></span><span></span><span></span></div>
+            <div class="preview-url">blackwolfmediame.vercel.app</div>
+          </div>
+          <div class="preview-body"></div>
         </div>
       </div>
     </div>
 
-    <!-- Project Cards -->
-    <div class="works-grid">
-      <div class="work-card">
-        <div class="work-card-num">02</div>
-        <h3 class="work-card-title">Zyro</h3>
-        <p class="work-card-tagline">AI Web Platform · SaaS</p>
-        <p class="work-card-desc">AI-powered web development platform. Conversion architecture, business automation, payment infrastructure, and custom SaaS solutions. Launch websites in hours, not days.</p>
-        <div class="work-card-stats">
-          <span>6 Live Tools</span>
-          <span>100/100 CWV</span>
-          <span>9 Products</span>
+    <!-- Work 02 -->
+    <div class="work-block">
+      <div class="work-num">02</div>
+      <div class="work-split">
+        <div class="work-info">
+          <h3 class="work-title">Zyro</h3>
+          <p class="work-subtitle">AI Web Platform · SaaS</p>
+          <p class="work-desc">AI-powered web development platform. Conversion architecture, business automation, payment infrastructure, and custom SaaS solutions. Launch websites in hours, not days.</p>
+          <div class="work-stats">
+            <span>6 Live Tools</span><span>100/100 CWV</span><span>9 Products</span>
+          </div>
+          <div class="work-tech">
+            <span>Next.js</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Tailwind</span>
+          </div>
+          <div class="work-links">
+            <a href="https://zyro-steel.vercel.app" target="_blank">Case study→</a>
+            <a href="https://zyro-steel.vercel.app" target="_blank" class="work-live">Live ↗</a>
+          </div>
         </div>
-        <div class="work-card-tech">
-          <span>Next.js</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>MongoDB</span><span>PostgreSQL</span><span>Tailwind</span>
-        </div>
-        <div class="work-card-links">
-          <a href="https://zyro-steel.vercel.app" target="_blank" class="work-link">Case study→</a>
-          <a href="https://zyro-steel.vercel.app" target="_blank" class="work-link-live">Live ↗</a>
+        <div class="work-preview">
+          <div class="preview-chrome">
+            <div class="preview-dots"><span></span><span></span><span></span></div>
+            <div class="preview-url">zyro-steel.vercel.app</div>
+          </div>
+          <div class="preview-body"></div>
         </div>
       </div>
-      <div class="work-card">
-        <div class="work-card-num">03</div>
-        <h3 class="work-card-title">GrimZone</h3>
-        <p class="work-card-tagline">Gaming · Real-time Tournaments</p>
-        <p class="work-card-desc">Pakistan's premier Free Fire tournament platform. Players compete in 1v1 and 2v2 tournaments, earn tokens, and win real prizes with live world chat.</p>
-        <div class="work-card-stats">
-          <span>348+ Players</span>
-          <span>4 Tournaments</span>
-          <span>4.9 Rating</span>
+    </div>
+
+    <!-- Work 03 -->
+    <div class="work-block">
+      <div class="work-num">03</div>
+      <div class="work-split">
+        <div class="work-info">
+          <h3 class="work-title">GrimZone</h3>
+          <p class="work-subtitle">Gaming · Real-time Tournaments</p>
+          <p class="work-desc">Pakistan's premier Free Fire tournament platform. Players compete in 1v1 and 2v2 tournaments, earn tokens, and win real prizes with live world chat.</p>
+          <div class="work-stats">
+            <span>348+ Players</span><span>4 Tournaments</span><span>4.9 Rating</span>
+          </div>
+          <div class="work-tech">
+            <span>Next.js</span><span>React</span><span>Real-time</span><span>Gaming</span>
+          </div>
+          <div class="work-links">
+            <a href="https://grimzone.vercel.app" target="_blank">Case study→</a>
+            <a href="https://grimzone.vercel.app" target="_blank" class="work-live">Live ↗</a>
+          </div>
         </div>
-        <div class="work-card-tech">
-          <span>Next.js</span><span>React</span><span>Real-time</span><span>Gaming</span>
-        </div>
-        <div class="work-card-links">
-          <a href="https://grimzone.vercel.app" target="_blank" class="work-link">Case study→</a>
-          <a href="https://grimzone.vercel.app" target="_blank" class="work-link-live">Live ↗</a>
+        <div class="work-preview">
+          <div class="preview-chrome">
+            <div class="preview-dots"><span></span><span></span><span></span></div>
+            <div class="preview-url">grimzone.vercel.app</div>
+          </div>
+          <div class="preview-body"></div>
         </div>
       </div>
     </div>
@@ -364,105 +349,87 @@
 
   <div class="divider"></div>
 
-  <!-- Testimonials -->
+  <!-- ===== TESTIMONIALS ===== -->
   <section id="testimonials">
-    <div class="section-header">
-      <p class="section-label">Counsel on Record</p>
-      <h2 class="section-title">Verdicts from<br/><span class="gold">the clients themselves.</span></h2>
-      <p class="section-desc">Every card opens the public record. Published with their ratings.</p>
+    <div class="sec-header">
+      <p class="sec-label">Counsel on Record</p>
+      <h2 class="sec-title">Verdicts from<br/><span class="gold-text">the clients themselves.</span></h2>
+      <p class="sec-desc">Every card opens the public record. Published with their ratings.</p>
     </div>
-    <div class="testimonial-stats-row">
-      <div class="testimonial-stat">
-        <div class="testimonial-stat-num">30+</div>
-        <div class="testimonial-stat-label">Projects</div>
-      </div>
-      <div class="testimonial-stat">
-        <div class="testimonial-stat-num">4.9★</div>
-        <div class="testimonial-stat-label">Average Rating</div>
-      </div>
-      <div class="testimonial-stat">
-        <div class="testimonial-stat-num">100%</div>
-        <div class="testimonial-stat-label">Committed to Quality</div>
-      </div>
+    <div class="test-stats-row">
+      <div class="test-stat"><span class="test-stat-num">30+</span><span class="test-stat-label">Engagements</span></div>
+      <div class="test-stat"><span class="test-stat-num">4.9★</span><span class="test-stat-label">Average Rating</span></div>
+      <div class="test-stat"><span class="test-stat-num">×1</span><span class="test-stat-label">Committed to Quality</span></div>
+      <div class="test-stat"><span class="test-stat-num">×1</span><span class="test-stat-label">Reliable</span></div>
     </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card testimonial-featured">
-        <div class="testimonial-rating">5.0★</div>
-        <div class="testimonial-badge">Featured Verdict</div>
-        <p class="testimonial-text">"You have the ones that simply do the bare minimum, and then you have this man that goes above and beyond. His consistency and effort is unmatched."</p>
-        <div class="testimonial-author">
-          <span class="testimonial-tag">Enterprise Client</span>
-        </div>
+    <div class="test-grid">
+      <div class="test-card test-featured">
+        <div class="test-rating">5.0</div>
+        <div class="test-badge">Featured Verdict</div>
+        <p class="test-quote">"You have the ones that simply do the bare minimum, and then you have this man that goes above and beyond. His consistency and effort is unmatched."</p>
+        <p class="test-author">Enterprise Client</p>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-rating">5.0★</div>
-        <p class="testimonial-text">"He never once said what you're asking is out of scope. He makes very complex things look easy and solvable."</p>
-        <div class="testimonial-author">
-          <span class="testimonial-tag">Full-Stack Client</span>
-        </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"He never once said what you're asking is out of scope. He makes very complex things look easy and solvable."</p>
+        <p class="test-author">Full-Stack Client</p>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-rating">5.0★</div>
-        <p class="testimonial-text">"He executed the project with excellent quality and exceeded my expectations. He met the deadline weeks earlier than what I set."</p>
-        <div class="testimonial-author">
-          <span class="testimonial-tag">SaaS Client</span>
-        </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"He executed the project with excellent quality and exceeded my expectations. He met the deadline weeks earlier than what I set. I would rate more than 5 stars if I could."</p>
+        <p class="test-author">SaaS Client</p>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-rating">5.0★</div>
-        <p class="testimonial-text">"Delivery time? Wow. Update times? Even faster. Many thanks for all the late nights and early mornings working on bugs."</p>
-        <div class="testimonial-author">
-          <span class="testimonial-tag">Web Platform Client</span>
-        </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"Delivery time? Wow. Update times? Even faster. Many thanks for all the late nights and early mornings working on bugs and fixing lines of code."</p>
+        <p class="test-author">Web Platform Client</p>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-rating">5.0★</div>
-        <p class="testimonial-text">"He stayed with me half an hour, solved every problem, and refused to get paid because he didn't work on it enough. Very honest person."</p>
-        <div class="testimonial-author">
-          <span class="testimonial-tag">Game Dev Client</span>
-        </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"He stayed with me half an hour, solved every problem, and refused to get paid because he didn't work on it. In my book he is a very honest person."</p>
+        <p class="test-author">Game Dev Client</p>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Chronicle / Timeline -->
+  <!-- ===== CHRONICLE ===== -->
   <section id="chronicle">
-    <div class="section-header">
-      <p class="section-label">The Chronicle</p>
-      <h2 class="section-title">A record of<br/><span class="gold">shipped ambition.</span></h2>
-      <p class="section-desc">Three positions. Zero exits without shipping. Every engagement dated, delivered, accounted for. That's the record.</p>
+    <div class="sec-header">
+      <p class="sec-label">The Chronicle</p>
+      <h2 class="sec-title">A record of<br/><span class="gold-text">shipped ambition.</span></h2>
+      <p class="sec-desc">Three positions. Zero exits without shipping. Every engagement dated, delivered, accounted for. That's the record.</p>
     </div>
-    <div class="chronicle-timeline">
-      <div class="chronicle-item">
-        <div class="chronicle-year">2024</div>
-        <div class="chronicle-dot"></div>
-        <div class="chronicle-content">
-          <div class="chronicle-date">2024 to Present</div>
-          <h3 class="chronicle-role">Senior Full-Stack Developer</h3>
-          <p class="chronicle-company">TechCorp Inc.</p>
-          <p class="chronicle-desc">Leading development of microservices architecture serving 1M+ users. Built real-time analytics dashboard and CI/CD pipeline.</p>
+    <div class="chrono-timeline">
+      <div class="chrono-item">
+        <div class="chrono-year">2024</div>
+        <div class="chrono-dot"></div>
+        <div class="chrono-body">
+          <div class="chrono-range">2024 to Present</div>
+          <h3 class="chrono-role">Senior Full-Stack Developer</h3>
+          <p class="chrono-company">TechCorp Inc.</p>
+          <p class="chrono-desc">Leading development of microservices architecture serving 1M+ users. Built real-time analytics dashboard and CI/CD pipeline.</p>
         </div>
       </div>
-      <div class="chronicle-item">
-        <div class="chronicle-year">2022</div>
-        <div class="chronicle-dot"></div>
-        <div class="chronicle-content">
-          <div class="chronicle-date">2022 to 2024</div>
-          <h3 class="chronicle-role">Full-Stack Developer</h3>
-          <p class="chronicle-company">StartupXYZ</p>
-          <p class="chronicle-desc">Developed core product features using React, Node.js, and MongoDB. Reduced load times by 40% and led 3 major releases.</p>
+      <div class="chrono-item">
+        <div class="chrono-year">2022</div>
+        <div class="chrono-dot"></div>
+        <div class="chrono-body">
+          <div class="chrono-range">2022 to 2024</div>
+          <h3 class="chrono-role">Full-Stack Developer</h3>
+          <p class="chrono-company">StartupXYZ</p>
+          <p class="chrono-desc">Developed core product features using React, Node.js, and MongoDB. Reduced load times by 40% and led 3 major releases.</p>
         </div>
       </div>
-      <div class="chronicle-item">
-        <div class="chronicle-year">2020</div>
-        <div class="chronicle-dot"></div>
-        <div class="chronicle-content">
-          <div class="chronicle-date">2020 to 2022</div>
-          <h3 class="chronicle-role">Junior Developer</h3>
-          <p class="chronicle-company">WebAgency Co.</p>
-          <p class="chronicle-desc">Built 15+ client websites and web apps. Migrated legacy jQuery codebase to React, improving maintainability.</p>
+      <div class="chrono-item">
+        <div class="chrono-year">2020</div>
+        <div class="chrono-dot"></div>
+        <div class="chrono-body">
+          <div class="chrono-range">2020 to 2022</div>
+          <h3 class="chrono-role">Junior Developer</h3>
+          <p class="chrono-company">WebAgency Co.</p>
+          <p class="chrono-desc">Built 15+ client websites and web apps. Migrated legacy jQuery codebase to React, improving maintainability.</p>
         </div>
       </div>
     </div>
@@ -470,123 +437,80 @@
 
   <div class="divider"></div>
 
-  <!-- FAQ -->
+  <!-- ===== FAQ ===== -->
   <section id="faq">
-    <div class="section-header">
-      <p class="section-label">Before You Write</p>
-      <h2 class="section-title">Asked before<br/><span class="gold">every engagement.</span></h2>
-      <p class="section-desc">Five answers up front. If these cover it, the briefing below is already halfway done.</p>
+    <div class="sec-header">
+      <p class="sec-label">Before You Write</p>
+      <h2 class="sec-title">Asked before<br/><span class="gold-text">every engagement.</span></h2>
+      <p class="sec-desc">Five answers up front. If these cover it, the briefing below is already halfway done.</p>
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-num">01.</span>
-          <span class="faq-text">What does an engagement cost?</span>
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>A fixed number on one page, set in the proposal. Enterprise work is quoted per engagement; smaller builds carry fixed prices. You know the figure before we shake hands, and it does not drift.</p>
-        </div>
+        <button class="faq-q"><span class="faq-n">01.</span><span class="faq-t">What does an engagement cost?</span><span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>A fixed number on one page, set in the proposal. Enterprise work is quoted per engagement; smaller builds carry fixed prices. You know the figure before we shake hands, and it does not drift.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-num">02.</span>
-          <span class="faq-text">How fast can you ship?</span>
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>A focused build ships in weeks, not quarters. An MVP in 8 weeks. A game in 72 hours. Weekly proof from week one, so you watch it exist instead of waiting for it.</p>
-        </div>
+        <button class="faq-q"><span class="faq-n">02.</span><span class="faq-t">How fast can you ship?</span><span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>A focused build ships in weeks, not quarters. An MVP in 8 weeks. A game in 72 hours. Weekly proof from week one, so you watch it exist instead of waiting for it.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-num">03.</span>
-          <span class="faq-text">Do you work remotely?</span>
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>I have delivered for clients across the world, entirely remote. Time zones are a scheduling detail, not a barrier.</p>
-        </div>
+        <button class="faq-q"><span class="faq-n">03.</span><span class="faq-t">Do you work remotely?</span><span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>I have delivered for clients across the world, entirely remote. Time zones are a scheduling detail, not a barrier.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-num">04.</span>
-          <span class="faq-text">Who owns the work?</span>
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>You do. Code, designs, documentation, credentials: handed over at close. No lingering access, no hostage source. Once payment clears, it is yours in full.</p>
-        </div>
+        <button class="faq-q"><span class="faq-n">04.</span><span class="faq-t">Who owns the work?</span><span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>You do. Code, designs, documentation, credentials: handed over at close. No lingering access, no hostage source. Once payment clears, it is yours in full.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-num">05.</span>
-          <span class="faq-text">What do you need from me to start?</span>
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>One honest briefing: the system causing the most pain, what it costs you, and a decision maker I can talk to directly. That is the whole checklist.</p>
-        </div>
+        <button class="faq-q"><span class="faq-n">05.</span><span class="faq-t">What do you need from me to start?</span><span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>One honest briefing: the system causing the most pain, what it costs you, and a decision maker I can talk to directly. That is the whole checklist.</p></div>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Contact / Inquiry -->
-  <section id="contact">
-    <div class="section-header">
-      <p class="section-label">Closing Briefing &amp; Inquiry</p>
-      <h2 class="section-title">Let's close<br/><span class="gold">the next flagship.</span></h2>
+  <!-- ===== CONTACT ===== -->
+  <section id="notes">
+    <div class="sec-header">
+      <p class="sec-label">Closing Briefing &amp; Inquiry</p>
+      <h2 class="sec-title">Let's close<br/><span class="gold-text">the next flagship.</span></h2>
     </div>
-    <div class="inquiry-form-container">
+    <div class="inquiry-wrap">
       <form class="inquiry-form" id="contactForm">
-        <div class="inquiry-row">
-          <div class="inquiry-field">
-            <label class="inquiry-label">My name is</label>
-            <input type="text" placeholder="Your Name" required class="inquiry-input" />
-          </div>
-          <div class="inquiry-field">
-            <label class="inquiry-label">I am looking to develop</label>
-            <input type="text" placeholder="A web application" required class="inquiry-input" />
-          </div>
+        <div class="inquiry-sentence">
+          <span class="inquiry-static">My name is</span>
+          <input type="text" placeholder="your name" required class="inquiry-inline" />
+          <span class="inquiry-static">. I am looking to develop</span>
+          <input type="text" placeholder="a web application" required class="inquiry-inline" />
+          <span class="inquiry-static">. You can reach me at</span>
+          <input type="email" placeholder="your@email.com" required class="inquiry-inline" />
+          <span class="inquiry-static">.</span>
         </div>
         <div class="inquiry-field">
-          <label class="inquiry-label">You can reach me at</label>
-          <input type="email" placeholder="your@email.com" required class="inquiry-input" />
+          <textarea placeholder="Tell me about your project..." required class="inquiry-textarea"></textarea>
         </div>
-        <div class="inquiry-field">
-          <label class="inquiry-label">Project details</label>
-          <textarea placeholder="Tell me about your project..." required class="inquiry-input inquiry-textarea"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary inquiry-submit">Transmit Briefing</button>
+        <button type="submit" class="btn btn-primary">Transmit Briefing</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">A<span class="nav-dot">·</span>B</div>
-      <div class="footer-links">
-        <a href="#capabilities">Capabilities</a>
-        <a href="#works">Works</a>
-        <a href="#chronicle">Chronicle</a>
-        <a href="#contact">Contact</a>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="#home" class="footer-logo">A<span>·</span>B</a>
       </div>
-      <div class="footer-social">
-        <a href="#" title="GitHub">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        </a>
-        <a href="#" title="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn" class="social-img" /></a>
-        <a href="#" title="Twitter"><img src="images/x.png" alt="X / Twitter" class="social-img" /></a>
-        <a href="#" title="Instagram"><img src="images/ig.png" alt="Instagram" class="social-img" /></a>
+      <div class="footer-center">
+        <a href="#chronicle">The Record ↓</a>
       </div>
-      <p class="footer-copy">© MMXXVI Abubakkar</p>
+      <div class="footer-right">
+        <span>© MMXXVI Abubakkar</span>
+      </div>
     </div>
   </footer>
 
-  <!-- AI Chatbot -->
+  <!-- ===== AI CHATBOT ===== -->
   <div class="chatbot-overlay" id="chatbotOverlay"></div>
   <div class="chatbot" id="chatbot">
     <div class="chatbot-header">
@@ -600,9 +524,7 @@
     <div class="chatbot-body" id="chatbotBody">
       <div class="chat-message bot">
         <div class="chat-avatar">🤖</div>
-        <div class="chat-bubble">
-          Hi! I'm Abubakkar's AI assistant. Ask me about his projects — <b>Black Wolf Media</b>, <b>Zyro</b>, or <b>GrimZone</b> — or his skills, experience, and more!
-        </div>
+        <div class="chat-bubble">Hi! I'm Abubakkar's AI assistant. Ask me about his projects — <b>Black Wolf Media</b>, <b>Zyro</b>, or <b>GrimZone</b> — or his skills, experience, and more!</div>
       </div>
     </div>
     <div class="chatbot-input-area">
@@ -620,11 +542,7 @@
       </div>
     </div>
   </div>
-
-  <!-- Chatbot FAB -->
-  <button class="chatbot-fab" id="chatbotFab" title="Ask AI about Abubakkar">
-    <span class="fab-icon">💬</span>
-  </button>
+  <button class="chatbot-fab" id="chatbotFab" title="Ask AI about Abubakkar"><span class="fab-icon">💬</span></button>
 
   <script src="js/chatbot.js"></script>
   <script src="js/script.js"></script>
