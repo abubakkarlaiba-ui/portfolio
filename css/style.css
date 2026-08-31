@@ -540,6 +540,16 @@ section{padding:7rem 3rem;max-width:1300px;margin:0 auto;position:relative;z-ind
 .preview-wolf{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)}
 .preview-zyro{background:linear-gradient(135deg,#0a0a0a,#1a1a1a,#2a2a2a)}
 .preview-grim{background:linear-gradient(135deg,#1a0a2e,#2d1b4e,#0f3460)}
+.preview-vox{background:linear-gradient(135deg,#0a1628,#1a2a4a,#0f3460)}
+.preview-erp{background:linear-gradient(135deg,#0a2818,#1a3a2a,#0f3460)}
+
+/* Live iframe in preview */
+.preview-body iframe{
+  width:200%;height:400%;border:none;
+  transform:scale(.5);transform-origin:top left;
+  pointer-events:auto;
+}
+.preview-body{overflow:hidden;cursor:pointer}
 
 /* ===== TESTIMONIALS ===== */
 .test-stats-row{display:flex;gap:3rem;margin-bottom:3rem;flex-wrap:wrap}
