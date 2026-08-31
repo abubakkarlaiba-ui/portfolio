@@ -515,3 +515,102 @@ footer{border-top:1px solid var(--border);padding:3rem;position:relative;z-index
   .hero-btns .btn{width:100%;justify-content:center}
   .chatbot{height:420px}
 }
+
+/* ===== ANIMATIONS ===== */
+.anim-fade-up{
+  opacity:0;
+  transform:translateY(30px);
+  transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1);
+  transition-delay:var(--d,0s);
+}
+.anim-fade-up.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* Hover lift for cards */
+.cap-card,.eng-card,.inst-card,.work-block,.test-card,.faq-item,.inline-exp-card{
+  transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease;
+}
+.cap-card:hover,.eng-card:hover,.inst-card:hover,.test-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 40px rgba(0,0,0,.08);
+}
+.work-block:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 32px rgba(0,0,0,.06);
+}
+
+/* Subtle scale on portrait hover */
+.portrait-img{
+  transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s ease;
+}
+.portrait-img:hover{
+  transform:scale(1.02);
+  box-shadow:0 16px 48px rgba(160,124,40,.15);
+}
+
+/* Button hover pulse */
+.btn-primary{
+  transition:all .3s cubic-bezier(.22,1,.36,1);
+}
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 24px rgba(160,124,40,.25);
+}
+
+/* FAQ arrow rotation */
+.faq-arrow{
+  transition:transform .3s ease;
+}
+.faq-item.active .faq-arrow{
+  transform:rotate(45deg);
+}
+
+/* Work preview subtle float */
+.work-preview{
+  transition:transform .4s cubic-bezier(.22,1,.36,1);
+}
+.work-block:hover .work-preview{
+  transform:translateY(-4px);
+}
+
+/* Cap card gold number glow on hover */
+.cap-card:hover .cap-num{
+  color:var(--accent);
+  text-shadow:0 0 20px rgba(160,124,40,.2);
+}
+
+/* Test card featured shimmer */
+.test-featured{
+  position:relative;
+  overflow:hidden;
+}
+.test-featured::after{
+  content:'';
+  position:absolute;top:0;left:-100%;width:200%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(160,124,40,.04),transparent);
+  animation:shimmer 3s ease-in-out infinite;
+}
+@keyframes shimmer{
+  0%{left:-100%}
+  100%{left:100%}
+}
+
+/* Inquiry sentence focus glow */
+.inquiry-inline:focus,.inquiry-textarea:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 2px rgba(160,124,40,.12);
+}
+
+/* Divider animation */
+.divider{
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--border),transparent);
+  opacity:.5;
+}
+
+/* Smooth scroll offset for fixed nav */
+section[id]{
+  scroll-margin-top:80px;
+}

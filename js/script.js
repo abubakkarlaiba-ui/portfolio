@@ -75,6 +75,58 @@ const revealObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => revealObs.observe(el));
 
+// Animated fade-up observer
+const animObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      animObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.anim-fade-up').forEach(el => animObs.observe(el));
+
+// Number counter animation
+function animateCounters() {
+  const counters = document.querySelectorAll('[data-count]');
+  counters.forEach(el => {
+    if (el.dataset.counted) return;
+    const target = parseInt(el.dataset.count);
+    const duration = 1800;
+    const start = performance.now();
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target);
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    el.dataset.counted = '1';
+    requestAnimationFrame(update);
+  });
+}
+const counterObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCounters();
+      counterObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.hero-stats,.test-stats-row').forEach(el => counterObs.observe(el));
+
+// Parallax on portrait
+const portrait = document.querySelector('.portrait-img');
+if (portrait) {
+  window.addEventListener('scroll', () => {
+    const rect = portrait.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      const offset = (rect.top / window.innerHeight) * 15;
+      portrait.style.transform = `translateY(${offset}px)`;
+    }
+  }, { passive: true });
+}
+
 // Hero role rotation
 const roles = ['Full-Stack Developer', 'Frontend Engineer', 'Backend Architect', 'Creative Problem Solver'];
 const roleEl = document.getElementById('heroRoles');
