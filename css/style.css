@@ -516,24 +516,14 @@ section{padding:7rem 3rem;max-width:1300px;margin:0 auto;position:relative;z-ind
 .preview-dots span:nth-child(3){background:rgba(80,160,80,.6)}
 .preview-url{font-size:.6rem;color:var(--muted);padding:.35rem .7rem;letter-spacing:.5px}
 .preview-body{
-  height:200px;border:1px solid var(--border);border-top:none;
+  height:350px;border:1px solid var(--border);border-top:none;
   border-radius:0 0 var(--radius) var(--radius);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
   position:relative;overflow:hidden;
+  background:var(--bg);
 }
-.preview-body .preview-title{
-  font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;
-  color:rgba(255,255,255,.9);position:relative;z-index:1;
-  text-align:center;padding:0 1rem;
-}
-.preview-body .preview-sub{
-  font-size:.6rem;letter-spacing:2px;text-transform:uppercase;
-  color:rgba(255,255,255,.5);margin-top:.4rem;position:relative;z-index:1;
-}
-.preview-body::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,rgba(0,0,0,.1),rgba(0,0,0,.3));
-  z-index:0;
+.preview-body iframe{
+  width:100%;height:100%;border:none;
+  pointer-events:auto;
 }
 
 /* Preview gradients per project */
@@ -542,14 +532,6 @@ section{padding:7rem 3rem;max-width:1300px;margin:0 auto;position:relative;z-ind
 .preview-grim{background:linear-gradient(135deg,#1a0a2e,#2d1b4e,#0f3460)}
 .preview-vox{background:linear-gradient(135deg,#0a1628,#1a2a4a,#0f3460)}
 .preview-erp{background:linear-gradient(135deg,#0a2818,#1a3a2a,#0f3460)}
-
-/* Live iframe in preview */
-.preview-body iframe{
-  width:200%;height:400%;border:none;
-  transform:scale(.5);transform-origin:top left;
-  pointer-events:auto;
-}
-.preview-body{overflow:hidden;cursor:pointer}
 
 /* ===== TESTIMONIALS ===== */
 .test-stats-row{display:flex;gap:3rem;margin-bottom:3rem;flex-wrap:wrap}
