@@ -20,7 +20,7 @@ class ParticleBackground {
       this.particles.push({
         x: Math.random() * this.canvas.width, y: Math.random() * this.canvas.height,
         size: Math.random() * 1.8 + 0.4, speedX: (Math.random() - 0.5) * 0.4,
-        speedY: (Math.random() - 0.5) * 0.4, opacity: Math.random() * 0.45 + 0.08
+        speedY: (Math.random() - 0.5) * 0.4, opacity: Math.random() * 0.35 + 0.05
       });
     }
   }
@@ -32,13 +32,13 @@ class ParticleBackground {
       if (p.y < 0 || p.y > this.canvas.height) p.speedY *= -1;
       this.ctx.beginPath();
       this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      this.ctx.fillStyle = `rgba(201,168,76,${p.opacity})`;
+      this.ctx.fillStyle = `rgba(180,150,60,${p.opacity})`;
       this.ctx.fill();
       for (let j = i + 1; j < this.particles.length; j++) {
         const dx = this.particles[j].x - p.x, dy = this.particles[j].y - p.y, dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < 140) {
           this.ctx.beginPath();
-          this.ctx.strokeStyle = `rgba(201,168,76,${0.04 * (1 - dist / 140)})`;
+          this.ctx.strokeStyle = `rgba(180,150,60,${0.06 * (1 - dist / 140)})`;
           this.ctx.lineWidth = 0.5;
           this.ctx.moveTo(p.x, p.y);
           this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
@@ -50,7 +50,7 @@ class ParticleBackground {
         if (dist < this.mouse.radius) {
           this.ctx.beginPath();
           this.ctx.arc(p.x, p.y, p.size * 2, 0, Math.PI * 2);
-          this.ctx.fillStyle = `rgba(201,168,76,${0.25 * (1 - dist / this.mouse.radius)})`;
+          this.ctx.fillStyle = `rgba(180,150,60,${0.15 * (1 - dist / this.mouse.radius)})`;
           this.ctx.fill();
         }
       }
