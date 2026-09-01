@@ -1,6 +1,6 @@
 const knowledgeBase = {
-  name: "Abubakkar",
-  fullName: "Abubakkar",
+  name: "Abubakkar Amir",
+  fullName: "Abubakkar Amir",
   title: "Full-Stack Developer & Creative Problem Solver",
   location: "Remote / Worldwide",
   email: "hello@Abubakkar.dev",
@@ -122,16 +122,16 @@ function normalize(str) {
 
 function getGreeting() {
   const greetings = [
-    "Hey there! 👋 I'm Abubakkar's AI assistant. Ask me about his projects like <b>Black Wolf Media</b>, <b>Zyro</b>, or <b>GrimZone</b> — or his skills, experience, and more!",
-    "Hi! I can tell you all about Abubakkar — his projects, skills, experience, and background. Try asking about <span class='highlight'>Black Wolf Media</span>, <span class='highlight'>Zyro</span>, or <span class='highlight'>GrimZone</span>!",
-    "Hello! I'm here to help you learn about Abubakkar. Curious about <b>Black Wolf Media</b> (video production agency), <b>Zyro</b> (AI web platform), or <b>GrimZone</b> (Free Fire tournaments)? Just ask!"
+    "Hey there! 👋 I'm Abubakkar Amir's AI assistant. Ask me about his projects like <b>Black Wolf Media</b>, <b>Zyro</b>, or <b>GrimZone</b> — or his skills, experience, and more!",
+    "Hi! I can tell you all about Abubakkar Amir — his projects, skills, experience, and background. Try asking about <span class='highlight'>Black Wolf Media</span>, <span class='highlight'>Zyro</span>, or <span class='highlight'>GrimZone</span>!",
+    "Hello! I'm here to help you learn about Abubakkar Amir. Curious about <b>Black Wolf Media</b> (video production agency), <b>Zyro</b> (AI web platform), or <b>GrimZone</b> (Free Fire tournaments)? Just ask!"
   ];
   return greetings[Math.floor(Math.random() * greetings.length)];
 }
 
 function getFallback() {
   const fallbacks = [
-    "I'm not sure I understand. You can ask me about Abubakkar's projects (<b>Black Wolf Media</b>, <b>Zyro</b>, <b>GrimZone</b>), skills, experience, or contact info!",
+    "I'm not sure I understand. You can ask me about Abubakkar Amir's projects (<b>Black Wolf Media</b>, <b>Zyro</b>, <b>GrimZone</b>), skills, experience, or contact info!",
     "Hmm, I don't have an answer for that. Try asking: <i>'Tell me about Black Wolf Media'</i>, <i>'What does Zyro do?'</i>, or <i>'How does GrimZone work?'</i>",
     "I couldn't find that in my knowledge base. Feel free to ask about his <b>projects</b>, <b>skills</b>, <b>experience</b>, or <b>background</b>!"
   ];
@@ -148,17 +148,17 @@ function findAnswer(query) {
 
   // Name
   if (/\b(name|who are you|who is)\b/.test(q) && /(you|this)/.test(q)) {
-    return `I'm an AI assistant here to tell you about <span class="highlight">Abubakkar</span> — a full-stack developer and creative problem solver. Ask me about his projects like Black Wolf Media, Zyro, or GrimZone!`;
+    return `I'm an AI assistant here to tell you about <span class="highlight">Abubakkar Amir</span> — a full-stack developer and creative problem solver. Ask me about his projects like Black Wolf Media, Zyro, or GrimZone!`;
   }
 
   // Who is / about
-  if (/\b(who is|tell me about|about)\b/.test(q) && /\b(Abubakkar|him|he|his|you)\b/.test(q)) {
-    return `<span class="highlight">Abubakkar</span> is a Full-Stack Developer & Creative Problem Solver with 4+ years of experience. He specializes in React, Node.js, and TypeScript. He's built <b>Black Wolf Media</b> (video production agency), <b>Zyro</b> (AI web platform), and <b>GrimZone</b> (Free Fire tournaments). He's delivered 30+ projects for 20+ happy clients.`;
+  if (/\b(who is|tell me about|about)\b/.test(q) && /\b(Abubakkar Amir|Abubakkar|him|he|his|you)\b/.test(q)) {
+    return `<span class="highlight">Abubakkar Amir</span> is a Full-Stack Developer & Creative Problem Solver with 4+ years of experience. He specializes in React, Node.js, and TypeScript. He's built <b>Black Wolf Media</b> (video production agency), <b>Zyro</b> (AI web platform), and <b>GrimZone</b> (Free Fire tournaments). He's delivered 30+ projects for 20+ happy clients.`;
   }
 
   // ========== PROJECTS: GENERAL ==========
   if (/\b(project|build|made|create|portfolio|websites?|sites?|work)\b/.test(q) && !/\b(experience|job|company)\b/.test(q)) {
-    let proj = `<span class="highlight">Abubakkar's</span> featured projects:\n\n`;
+    let proj = `<span class="highlight">Abubakkar Amir's</span> featured projects:\n\n`;
     knowledgeBase.projects.forEach(p => {
       proj += `<b>${p.name}</b>\n${p.tagline}\n${p.description}\n🔗 ${p.url}\n\n`;
     });
@@ -285,7 +285,7 @@ function findAnswer(query) {
 
   // ========== SKILLS ==========
   if (/\b(skill|tech|stack|technolog|know|language|tool|expert)\b/.test(q)) {
-    return `<span class="highlight">Abubakkar's</span> tech stack includes:\n\n` +
+    return `<span class="highlight">Abubakkar Amir's</span> tech stack includes:\n\n` +
       `🔷 <b>Frontend:</b> ${knowledgeBase.skills.frontend.join(', ')}\n` +
       `🖥️ <b>Backend:</b> ${knowledgeBase.skills.backend.join(', ')}\n` +
       `☁️ <b>DevOps:</b> ${knowledgeBase.skills.devops.join(', ')}\n` +
@@ -294,37 +294,37 @@ function findAnswer(query) {
   }
 
   if (/\bfrontend\b|\bfront-end\b/.test(q)) {
-    return `<span class="highlight">Abubakkar's</span> frontend skills: ${knowledgeBase.skills.frontend.join(', ')}.`;
+    return `<span class="highlight">Abubakkar Amir's</span> frontend skills: ${knowledgeBase.skills.frontend.join(', ')}.`;
   }
 
   if (/\bback\s*end\b|\bbackend\b/.test(q)) {
-    return `<span class="highlight">Abubakkar's</span> backend skills: ${knowledgeBase.skills.backend.join(', ')}.`;
+    return `<span class="highlight">Abubakkar Amir's</span> backend skills: ${knowledgeBase.skills.backend.join(', ')}.`;
   }
 
   // Specific tech questions
   if (/\breact\b/.test(q) && /\b(skill|know|use|work|experience)\b/.test(q)) {
-    return `<span class="highlight">Abubakkar</span> is highly skilled in React and uses it as his primary frontend framework. He's built complex SPAs, dashboards, and interactive UIs with React, Next.js, and React Native. He used React in all three of his projects: Black Wolf Media, Zyro, and GrimZone.`;
+    return `<span class="highlight">Abubakkar Amir</span> is highly skilled in React and uses it as his primary frontend framework. He's built complex SPAs, dashboards, and interactive UIs with React, Next.js, and React Native. He used React in all three of his projects: Black Wolf Media, Zyro, and GrimZone.`;
   }
 
   if (/\bnode\b/.test(q) && /\b(skill|know|use|work|experience)\b/.test(q)) {
-    return `<span class="highlight">Abubakkar</span> uses Node.js extensively for backend development — REST APIs, microservices, real-time applications with WebSockets, and CLI tools.`;
+    return `<span class="highlight">Abubakkar Amir</span> uses Node.js extensively for backend development — REST APIs, microservices, real-time applications with WebSockets, and CLI tools.`;
   }
 
   if (/\btypescript\b/.test(q)) {
-    return `<span class="highlight">Abubakkar</span> uses TypeScript daily across both frontend and backend for type-safe, maintainable code.`;
+    return `<span class="highlight">Abubakkar Amir</span> uses TypeScript daily across both frontend and backend for type-safe, maintainable code.`;
   }
 
   if (/\bdocker\b/.test(q)) {
-    return `<span class="highlight">Abubakkar</span> uses Docker for containerization and development environments. He also works with Kubernetes for orchestration.`;
+    return `<span class="highlight">Abubakkar Amir</span> uses Docker for containerization and development environments. He also works with Kubernetes for orchestration.`;
   }
 
   if (/\b(aws|cloud|deploy)\b/.test(q)) {
-    return `<span class="highlight">Abubakkar</span> has experience with AWS services including EC2, Lambda, S3, and RDS for cloud deployment and infrastructure.`;
+    return `<span class="highlight">Abubakkar Amir</span> has experience with AWS services including EC2, Lambda, S3, and RDS for cloud deployment and infrastructure.`;
   }
 
   // ========== EXPERIENCE ==========
   if (/\b(experience|work|job|career|employ|position|role|company)\b/.test(q)) {
-    let exp = `<span class="highlight">Abubakkar's</span> work experience:\n\n`;
+    let exp = `<span class="highlight">Abubakkar Amir's</span> work experience:\n\n`;
     knowledgeBase.experience.forEach(e => {
       exp += `<b>${e.role}</b> @ ${e.company} (${e.period})\n${e.description}\n\n`;
     });
@@ -333,45 +333,45 @@ function findAnswer(query) {
 
   if (/\b(current|now|present|today|working on)\b/.test(q)) {
     const current = knowledgeBase.experience[0];
-    return `Currently, <span class="highlight">Abubakkar</span> is working as <b>${current.role}</b> at ${current.company}. ${current.description}`;
+    return `Currently, <span class="highlight">Abubakkar Amir</span> is working as <b>${current.role}</b> at ${current.company}. ${current.description}`;
   }
 
   if (/\b(how long|years|experience)\b/.test(q) && /\b(work|coding|dev|job)\b/.test(q)) {
-    return `<span class="highlight">Abubakkar</span> has <b>4+ years</b> of professional development experience.`;
+    return `<span class="highlight">Abubakkar Amir</span> has <b>4+ years</b> of professional development experience.`;
   }
 
   // ========== CONTACT ==========
   if (/\b(contact|email|reach|message|connect|hire|get in touch)\b/.test(q)) {
-    return `You can reach <span class="highlight">Abubakkar</span> at:\n\n📧 <b>Email:</b> hello@Abubakkar.dev\n🐦 <b>Twitter:</b> @Abubakkar_dev\n🐙 <b>GitHub:</b> github.com/Abubakkar\n🔗 <b>LinkedIn:</b> linkedin.com/in/Abubakkar\n\nHe's based remotely and open to interesting opportunities worldwide!`;
+    return `You can reach <span class="highlight">Abubakkar Amir</span> at:\n\n📧 <b>Email:</b> hello@Abubakkar.dev\n🐦 <b>Twitter:</b> @Abubakkar_dev\n🐙 <b>GitHub:</b> github.com/Abubakkar\n🔗 <b>LinkedIn:</b> linkedin.com/in/Abubakkar\n\nHe's based remotely and open to interesting opportunities worldwide!`;
   }
 
   if (/\b(location|where|based|remote|live|located)\b/.test(q)) {
-    return `<span class="highlight">Abubakkar</span> works remotely from anywhere in the world. 🌍`;
+    return `<span class="highlight">Abubakkar Amir</span> works remotely from anywhere in the world. 🌍`;
   }
 
   // ========== STATS ==========
   if (/\b(stat|achievement|accomplish|deliver|client|project.*count|how many)\b/.test(q)) {
-    return `<span class="highlight">Abubakkar's</span> stats:\n\n📦 <b>${knowledgeBase.stats.projectsDelivered}</b> projects delivered\n😊 <b>${knowledgeBase.stats.happyClients}</b> happy clients\n💼 <b>${knowledgeBase.stats.yearsExperience}</b> years experience`;
+    return `<span class="highlight">Abubakkar Amir's</span> stats:\n\n📦 <b>${knowledgeBase.stats.projectsDelivered}</b> projects delivered\n😊 <b>${knowledgeBase.stats.happyClients}</b> happy clients\n💼 <b>${knowledgeBase.stats.yearsExperience}</b> years experience`;
   }
 
   // ========== INTERESTS ==========
   if (/\b(coffee|hobby|interest|fun|outside|free time)\b/.test(q)) {
-    return `When he's not coding, <span class="highlight">Abubakkar</span> enjoys exploring new frameworks, contributing to open-source projects, and perfecting his pour-over coffee technique! ☕`;
+    return `When he's not coding, <span class="highlight">Abubakkar Amir</span> enjoys exploring new frameworks, contributing to open-source projects, and perfecting his pour-over coffee technique! ☕`;
   }
 
   // ========== HELP ==========
   if (/\b(help|what can you|what do you know|capabilities|suggest|question)\b/.test(q)) {
-    return "I can tell you about <span class='highlight'>Abubakkar's</span> projects, skills, work experience, contact info, and background. Try asking:\n\n" +
+    return "I can tell you about <span class='highlight'>Abubakkar Amir's</span> projects, skills, work experience, contact info, and background. Try asking:\n\n" +
       "• <i>'Tell me about Black Wolf Media'</i>\n" +
       "• <i>'What does Zyro do?'</i>\n" +
       "• <i>'How does GrimZone work?'</i>\n" +
-      "• <i>'What skills does Abubakkar have?'</i>\n" +
+      "• <i>'What skills does Abubakkar Amir have?'</i>\n" +
       "• <i>'Show me his projects'</i>";
   }
 
   // ========== GOODBYE ==========
   if (/\b(bye|goodbye|see you|thanks|thank you)\b/.test(q)) {
-    return "You're welcome! Feel free to ask more about <span class='highlight'>Abubakkar</span> anytime. 😊";
+    return "You're welcome! Feel free to ask more about <span class='highlight'>Abubakkar Amir</span> anytime. 😊";
   }
 
   return null;

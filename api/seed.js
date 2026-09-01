@@ -32,7 +32,6 @@ module.exports = async function handler(req, res) {
       await sql`
         INSERT INTO projects (title, subtitle, description, url, tech, stats, badge, sort_order)
         VALUES (${p.title}, ${p.subtitle}, ${p.description}, ${p.url}, ${p.tech}, ${p.stats}, ${p.badge || null}, ${p.sort_order})
-        ON CONFLICT (title) DO NOTHING
       `;
     }
 
