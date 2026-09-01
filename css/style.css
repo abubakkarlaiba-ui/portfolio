@@ -449,43 +449,42 @@ section{padding:7rem 3rem;max-width:1300px;margin:0 auto;position:relative;z-ind
 .cap-card p{color:var(--dim);font-size:.82rem;line-height:1.7}
 
 /* ===== ENGAGEMENT ===== */
-.eng-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;align-items:start}
+.eng-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;align-items:start}
 .eng-card{
-  border:1px solid rgba(0,0,0,.06);
+  border:none;
   background:transparent;
-  border-radius:0;padding:1.8rem 1.4rem 2.2rem;
+  border-radius:6px;padding:2rem 1.4rem 2.4rem;
   transition:all .5s cubic-bezier(.22,1,.36,1);
   position:relative;overflow:hidden;
   text-align:left;
 }
-.eng-card:nth-child(1){min-height:360px}
-.eng-card:nth-child(2){min-height:335px}
-.eng-card:nth-child(3){min-height:345px}
-.eng-card:nth-child(4){min-height:320px}
-.eng-card:hover{background:var(--bg-card);border-color:rgba(160,124,40,.15)}
+.eng-card:nth-child(1){min-height:320px}
+.eng-card:nth-child(2){min-height:300px}
+.eng-card:nth-child(3){min-height:310px}
+.eng-card:nth-child(4){min-height:290px}
 .eng-ghost-num{
-  position:absolute;top:-30px;right:-20px;
-  font-family:'Playfair Display',serif;font-size:22rem;font-weight:900;font-style:italic;
-  color:var(--accent);opacity:.04;pointer-events:none;user-select:none;
-  line-height:.8;
+  position:absolute;bottom:-15px;right:-10px;
+  font-family:'Playfair Display',serif;font-size:10rem;font-weight:900;font-style:italic;
+  color:var(--accent);opacity:.045;pointer-events:none;user-select:none;
+  line-height:1;
 }
 .eng-num{
-  font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:400;
-  color:var(--accent);opacity:.7;margin-bottom:.4rem;
+  font-family:'Playfair Display',serif;font-size:2rem;font-weight:400;
+  color:var(--accent);opacity:.85;margin-bottom:.5rem;
   position:relative;z-index:1;line-height:1;
 }
 .eng-line{
-  width:40px;height:1px;
-  background:linear-gradient(90deg,var(--accent),transparent);
-  margin-bottom:1rem;position:relative;z-index:1;
+  width:32px;height:1.5px;
+  background:var(--accent);opacity:.4;
+  margin-bottom:1.2rem;position:relative;z-index:1;
 }
 .eng-title{
-  font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;
-  color:var(--text);margin-bottom:1rem;position:relative;z-index:1;line-height:1.2;
+  font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;
+  color:var(--text);margin-bottom:.8rem;position:relative;z-index:1;line-height:1.2;
 }
 .eng-title .eng-the{
-  font-size:.75rem;font-weight:600;font-style:italic;
-  color:var(--dim);display:block;margin-bottom:.15rem;letter-spacing:.5px;
+  font-family:'Caveat',cursive;font-size:1rem;font-weight:500;
+  color:var(--dim);display:block;margin-bottom:.1rem;
 }
 .eng-card p{
   color:var(--dim);font-size:.78rem;line-height:1.8;position:relative;z-index:1;
