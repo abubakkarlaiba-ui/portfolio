@@ -451,10 +451,10 @@ section{padding:7rem 3rem;max-width:1300px;margin:0 auto;position:relative;z-ind
 .cap-card p{color:var(--dim);font-size:.82rem;line-height:1.7}
 
 /* ===== ENGAGEMENT ===== */
-.eng-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;align-items:start}
+.eng-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;align-items:start}
 .eng-card{
-  border:none;
-  background:transparent;
+  border:1px solid rgba(0,0,0,.07);
+  background:rgba(255,255,255,.5);
   border-radius:6px;padding:2rem 1.4rem 2.4rem;
   transition:all .5s cubic-bezier(.22,1,.36,1);
   position:relative;overflow:hidden;
@@ -464,6 +464,7 @@ section{padding:7rem 3rem;max-width:1300px;margin:0 auto;position:relative;z-ind
 .eng-card:nth-child(2){min-height:300px}
 .eng-card:nth-child(3){min-height:310px}
 .eng-card:nth-child(4){min-height:290px}
+.eng-card:hover{border-color:rgba(160,124,40,.2);box-shadow:0 4px 20px rgba(160,124,40,.06);transform:translateY(-2px)}
 .eng-ghost-num{
   position:absolute;bottom:-15px;right:-10px;
   font-family:'Playfair Display',serif;font-size:10rem;font-weight:900;font-style:italic;
