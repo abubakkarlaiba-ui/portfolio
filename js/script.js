@@ -19,8 +19,8 @@ class ParticleBackground {
     for (let i = 0; i < c; i++) {
       this.particles.push({
         x: Math.random() * this.canvas.width, y: Math.random() * this.canvas.height,
-        size: Math.random() * 1.8 + 0.4, speedX: (Math.random() - 0.5) * 0.4,
-        speedY: (Math.random() - 0.5) * 0.4, opacity: Math.random() * 0.35 + 0.05
+        size: Math.random() * 2.2 + 0.6, speedX: (Math.random() - 0.5) * 0.4,
+        speedY: (Math.random() - 0.5) * 0.4, opacity: Math.random() * 0.5 + 0.1
       });
     }
   }
@@ -38,7 +38,7 @@ class ParticleBackground {
         const dx = this.particles[j].x - p.x, dy = this.particles[j].y - p.y, dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < 140) {
           this.ctx.beginPath();
-          this.ctx.strokeStyle = `rgba(180,150,60,${0.06 * (1 - dist / 140)})`;
+          this.ctx.strokeStyle = `rgba(180,150,60,${0.12 * (1 - dist / 140)})`;
           this.ctx.lineWidth = 0.5;
           this.ctx.moveTo(p.x, p.y);
           this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
