@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Abubakkar - Full-Stack Developer Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "schema": "node api/schema-client.js",
+    "seed": "node api/seed-client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abubakkarlaiba-ui/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Abubakkar",
+  "license": "ISC",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "dotenv": "^17.4.2"
+  }
+}
