@@ -355,8 +355,24 @@ nav.scrolled{background:rgba(250,250,247,0.96);border-bottom:1px solid var(--bor
 /* ===== INLINE EXPERIENCE ===== */
 .inline-exp{padding:5rem 3rem;max-width:1300px;margin:0 auto;position:relative;z-index:1}
 .inline-exp-top{display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem}
-.inline-exp-top .gold-text{font-size:.62rem;font-weight:600;letter-spacing:3px}
-.inline-exp-top .dim-text{font-size:.68rem;letter-spacing:1px}
+.logo-mark{display:flex;align-items:center;gap:1.2rem}
+.logo-circle{
+  width:70px;height:70px;border-radius:50%;
+  border:1.5px solid var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.logo-a{
+  font-family:'Great Vibes',cursive;
+  font-size:2rem;color:var(--accent);
+  line-height:1;
+}
+.logo-text{
+  display:flex;flex-direction:column;
+  font-family:'Inter',sans-serif;font-size:.55rem;font-weight:500;
+  letter-spacing:3px;color:var(--text);opacity:.7;
+  line-height:1.6;text-transform:uppercase;
+}
 
 .inline-exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:4rem}
 .inline-exp-card{
