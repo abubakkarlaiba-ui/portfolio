@@ -57,6 +57,8 @@ button{font-family:inherit}
 
 .gold-text{color:var(--accent)}
 .dim-text{color:var(--muted)}
+.sig-font{font-family:'Great Vibes',cursive;font-weight:400;font-style:normal}
+.sec-title .sig-font{font-size:1.15em;color:var(--text);opacity:.9}
 
 /* ===== HAIRLINE GILT DECORATOR ===== */
 .gilt-line{
@@ -483,8 +485,8 @@ section{padding:7rem 3rem;max-width:1300px;margin:0 auto;position:relative;z-ind
   color:var(--text);margin-bottom:.8rem;position:relative;z-index:1;line-height:1.2;
 }
 .eng-title .eng-the{
-  font-family:'Caveat',cursive;font-size:1rem;font-weight:500;
-  color:var(--dim);display:block;margin-bottom:.1rem;
+  font-family:'Great Vibes',cursive;font-size:1.3rem;font-weight:400;
+  color:var(--accent);display:block;margin-bottom:.1rem;opacity:.85;
 }
 .eng-card p{
   color:var(--dim);font-size:.78rem;line-height:1.8;position:relative;z-index:1;
