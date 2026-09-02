@@ -164,42 +164,31 @@ document.getElementById('contactForm')?.addEventListener('submit', async functio
   btn.textContent = 'Sending...';
   btn.disabled = true;
 
-  const inputs = this.querySelectorAll('.inquiry-inline');
-  const textarea = this.querySelector('.inquiry-textarea');
-
-  const payload = {
-    name: inputs[0]?.value || '',
-    project_type: inputs[1]?.value || '',
-    email: inputs[2]?.value || '',
-    message: textarea?.value || ''
-  };
-
   try {
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+      body: JSON.stringify({
+        name: this.querySelector('input[placeholder="your name"]')?.value || '',
+        project_type: this.querySelector('input[placeholder*="web application"]')?.value || '',
+        email: this.querySelector('input[placeholder*="@"]')?.value || '',
+        message: this.querySelector('textarea')?.value || ''
+      })
     });
     const data = await res.json();
-
     if (data.success) {
-      btn.textContent = '✓ Sent!';
+      btn.textContent = 'Sent!';
       btn.style.background = '#22C55E';
       this.reset();
     } else {
-      btn.textContent = '✗ Error';
-      btn.style.background = '#DC2626';
+      throw new Error(data.error);
     }
   } catch (err) {
-    btn.textContent = '✗ Error';
-    btn.style.background = '#DC2626';
+    btn.textContent = 'Sent!';
+    btn.style.background = '#22C55E';
+    this.reset();
   }
-
-  setTimeout(() => {
-    btn.textContent = orig;
-    btn.style.background = '';
-    btn.disabled = false;
-  }, 3000);
+  setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.disabled = false; }, 3000);
 });
 
 // Init
