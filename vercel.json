@@ -1,12 +1,10 @@
 {
   "version": 2,
   "public": true,
-  "framework": null,
-  "buildCommand": "",
-  "outputDirectory": ".",
   "installCommand": "npm install",
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/$1" }
-  ]
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "@vercel/node@3"
+    }
+  }
 }
